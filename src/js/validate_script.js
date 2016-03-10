@@ -117,6 +117,28 @@ function validationCall(form){
     });
 }
 
+
+function validationCallSuccMail(form){
+
+    var thisForm = $(form);
+    var formData = $(form).serialize();
+
+    $.ajax({
+        url: thisForm.attr('action'),
+        type: "POST",
+        data: formData,
+        contentType:false,
+        processData:false,
+        cache:false,
+        success: function(response) {
+            thisForm.trigger("reset");
+            $('.look-smile').css('z-index', '10');
+            $('.bonus-email').css('visibility', 'hidden');
+        }
+    });
+
+}
+
 /* Отправка формы с файлом */
 function validationCallDocument(form){
 
@@ -212,6 +234,9 @@ function fancyboxForm(){
 
 $(document).ready(function(){
    validate('#call-popup .contact-form', {submitFunction:validationCall});
+
+   validate('.bonus-email', {submitFunction:validationCallSuccMail});
+
    Maskedinput();
    fancyboxForm();
 });
