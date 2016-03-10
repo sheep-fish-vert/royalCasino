@@ -14,7 +14,7 @@
 /* base styles*/
 *,*:before, *:after{box-sizing:border-box;outline:none;}
 html{height:100%;}
-body{min-height:100%;width:100%;font-family:arial,sans-serif;background:#f7f7f7;color:#656565;position:relative;font-size: 14px;line-height: 1;}
+body{min-height:100%;width:100%;min-width:320px;font-family:arial,sans-serif;background:#f7f7f7;color:#656565;position:relative;font-size: 14px;line-height: 1;}
 img{vertical-align:bottom;border:0;max-width:100%;}
 
 /* /base styles */
@@ -44,7 +44,7 @@ a[href^="http"]:empty::before {
 @media screen and (max-width: 1024px){
     .mbox{max-width:960px;}
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 768px){
     .mbox{max-width:758px;}
 }
 @media screen and (max-width: 640px){
