@@ -28,6 +28,19 @@
 
     /* /footer */
 
+    /* form */
+
+        .form-class{
+            .form-wrap{max-width: none;}
+            .form_row{
+                .form_input{
+                    .errorText{position: static;padding-top: 10px;display: block;width: 100%;transform:translate(0, 0);}
+                }
+            }
+        }
+
+    /* /form */
+
 }
 @media screen and (max-width: 666px){
 
