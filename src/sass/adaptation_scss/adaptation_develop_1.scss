@@ -57,8 +57,36 @@
 
     /* /footer */
 
+    /* registration-message */
+
+        .registration-message{
+            .registration-message-wrap{
+                .registration-message-title{font-size: 32px;line-height: 40px;}
+                .registration-message-text{font-size: 28px;line-height: 34px;}
+                .registration-message-link{
+                    .button-blue{max-width: none;height: 95px;line-height: 95px;font-size: 32px;}
+                }
+            }
+        }
+
+    /* /geristration-message */
+
 }
 @media screen and (max-width: 479px){
+
+    /* registration-message */
+
+        .registration-message{
+            .registration-message-wrap{
+                .registration-message-title{font-size: 18px;line-height: 22px;}
+                .registration-message-text{font-size: 14px;line-height: 20px;}
+                .registration-message-link{
+                    .button-blue{max-width: none;height: 50px;line-height: 50px;font-size: 16px;}
+                }
+            }
+        }
+
+    /* /geristration-message */
 
 }
 @media screen and (max-width: 320px){
