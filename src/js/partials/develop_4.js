@@ -1,7 +1,14 @@
 try{
+    function socialHeaderClick(){
+        if( $(window).width()>768 && $(window).width()<1024 ){
+            console.log('go');
+        }
+    }
+
+
 
     $(document).ready(function(){
-
+        socialHeaderClick();
     });
 
     $(window).load(function(){
@@ -9,7 +16,7 @@ try{
     });
 
     $(window).resize(function(){
-
+        socialHeaderClick();
     });
 
 }
