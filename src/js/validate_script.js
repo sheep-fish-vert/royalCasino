@@ -240,6 +240,7 @@ $(document).ready(function(){
 
    validate('.login-form-main');
 
+   validate('.registration-form-main');
 
    Maskedinput();
    fancyboxForm();
