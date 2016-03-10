@@ -14,14 +14,14 @@
 /* base styles*/
 *,*:before, *:after{box-sizing:border-box;outline:none;}
 html{height:100%;}
-body{min-height:100%;width:100%;font-family:arial,sans-serif;background:#fff;color:#3d3d3d;position:relative;font-size: 16px;line-height: 1;}
+body{min-height:100%;width:100%;font-family:arial,sans-serif;background:#f7f7f7;color:#656565;position:relative;font-size: 14px;line-height: 1;}
 img{vertical-align:bottom;border:0;max-width:100%;}
 
 /* /base styles */
 
 /* wraps styling*/
 
-.mbox{max-width:1024px;width:100%;margin:0 auto;position:relative;z-index:1;}
+.mbox{max-width:1300px;width:100%;margin:0 auto;position:relative;z-index:1;padding: 0 10px;}
 .mbox:after{content:"";clear:both;font-size:1px;line-height:1px;height:0;overflow:hidden;display:block;}
 
 /* /wraps styling*/
@@ -39,8 +39,14 @@ a[href^="http"]:empty::before {
   content: attr(href);
 }
 
-a[href] {
-  text-decoration: underline;
-  &:hover,&:active{text-decoration: none;}
-}
 /*End Layout*/
+
+@media screen and (max-width: 1024px){
+    .mbox{max-width:960px;}
+}
+@media screen and (max-width: 1024px){
+    .mbox{max-width:758px;}
+}
+@media screen and (max-width: 640px){
+    .mbox{max-width:100%;padding: 0;}
+}
