@@ -8,10 +8,16 @@
 
 }
 @media screen and (max-width: 1280px){
+    .casino-list-wrap .conteiner .content { padding-right: 10px;}
 
 }
 @media screen and (max-width: 1024px){
+    .super-stat:before, .super-stat:after{ display: none;}
 
+    .super-stat{display: table; width: 100%;}
+    .casino-list-wrap {width: 66%; float: none; border-right: 2px solid #dddddd; display: inline-block;}
+    .second-block-wrap { width: 34%; float: none; display: inline-block; vertical-align: top;}
+    .slice-wrap{width: calc(100%/3);float: none; display: inline-block; vertical-align: top; position: relative; z-index: 10;}
 }
 @media screen and (max-width: 992px){
 
