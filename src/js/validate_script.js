@@ -47,7 +47,7 @@ function validate(form, options){
                 if( typeof(setings.submitFunction) === 'function' ) {
                     setings.submitFunction(form);
                 } else {
-                    $form.submit();
+                    $form[0].submit();
                 }
             }
         });
@@ -233,9 +233,14 @@ function fancyboxForm(){
 }
 
 $(document).ready(function(){
+
    validate('#call-popup .contact-form', {submitFunction:validationCall});
 
    validate('.bonus-email', {submitFunction:validationCallSuccMail});
+
+   validate('.login-form-main');
+
+   validate('.registration-form-main');
 
    Maskedinput();
    fancyboxForm();

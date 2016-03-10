@@ -27,8 +27,45 @@
 
 /* /footer */
 
-/* login-form */
+/* form */
 
+    .form-class{background-color: #fff;padding: 25px 20px 0 20px;
+        .form-class-title{font-size: 18px;color:#336699;font-weight: 700;text-transform: uppercase;margin-bottom: 5px;}
+        .form-class-subtitle{font-size: 12px;color:#336699;margin-bottom: 10px;}
+        .form-wrap{max-width: calc(100% - 210px);width: 100%;}
+        .form_row{margin-bottom: 20px;
+            .form_input{position: relative;
+                input{height: 50px;background-color: #fff;border:1px solid #c5c5c5;border-radius: 3px;text-align: center;line-height: 50px;padding: 0 5px;width: 100%;
+                    &::-webkit-input-placeholder {color:#a0a0a0;font-family: Arial, sans-serif;}
+                    &:-moz-placeholder {color:#a0a0a0;font-family: Arial, sans-serif;}
+                    &::-moz-placeholder {color:#a0a0a0;font-family: Arial, sans-serif;}
+                    &:-ms-input-placeholder {color:#a0a0a0;font-family: Arial, sans-serif;}
+                }
+                .errorText{position: absolute;left: calc(100% + 10px);width: 200px;top: 50%;transform:translate(0, -50%);font-size: 12px;color:#424242;}
+            }
+        }
+        .submit-wrap{margin-bottom: 20px;}
+        .register-link-wrap{margin-bottom: 15px;}
+        .button-green, .button-blue{width: 100%;max-width: none;height: 50px;line-height: 50px;text-decoration: none;border:none;font-size: 16px;font-weight: 700;text-transform: uppercase;cursor:pointer;
+            &:hover{background:orange;}
+        }
 
+        .form-links{text-align: center;font-size: 12px;padding-bottom: 20px;
+            a{color:#424242;position: relative;text-decoration: none;
+                &:after{content:'';display: block;position: absolute;top: 100%;left: 0;height: 1px;width: 100%;background-color: #424242;transition:width 300ms ease;}
+                &:hover{
+                    &:after{width: 0;}
+                }
+            }
+        }
+        .form-socials{padding-bottom: 20px;padding-top: 35px;
+            .form-socials-text{font-size: 12px;color:#336699;text-align: center;margin-bottom: 15px;}
+            .form-socials-wrap{display: flex;justify-content:center;
+                a{display: flex;justify-content:center;align-items:center;width:36px;height: 36px;margin:0 5px;background-color: #b3b3b3;border:1px solid #e4e4e4;border-radius:2px;transition:background-color 300ms ease, border-color 300ms ease;
+                    &:hover{background-color: orange;border-color:orange;}
+                }
+            }
+        }
+    }
 
-/* /login-form */
+/* /form */
