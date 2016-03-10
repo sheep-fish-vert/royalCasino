@@ -29,9 +29,10 @@
 /* paginator */
 
 
+
 /* first-colom */
-.casino-list-wrap{ width: 50%; float: left; border: 2px solid #dddddd;border-top: 0px solid #dddddd;
-    .conteiner{background-color: #ffffff;
+.casino-list-wrap{  width: 50%; float: left; border: 2px solid #dddddd;border-top: 0px solid #dddddd;background-color: #ffffff;
+    .conteiner{
         .content{ width: 100%;padding-left: 10px;  padding-right: 50px;
             .item-list{
                 .item{border-bottom: 2px solid #dddddd; display: table; min-height: 200px;
@@ -79,7 +80,7 @@
 
 /* slice-colom */
 
-.slice-wrap{  width: 25%; float: left; border: 2px solid #dddddd;border-top: 0px solid #dddddd;
+.slice-wrap{  width: 25%; float: left; border: 2px solid #dddddd;border-top: 0px solid #dddddd; background-color: #ffffff;
     .content{ padding: 30px 20px; text-align: center; background-color: white; position: relative;
         p.look-smile{ position: absolute; top: 0; left: 50%; transform: translateX(-50%); height: 50px; width: 80%; font-size: 14px; font-family: "Arial", sans-serif; font-style: italic;  line-height: 1.2; z-index: -1; top: 30%; }
         .bonus-email{
@@ -103,13 +104,11 @@
             .convert-butt{padding: 10px 0 0;}
         }
         .lister{ text-align: left;
-            ul li{ position: relative;
-                &:before{content: ''; position: absolute; left: 0; width: 4px; height: 4px; border-radius: 50%; }
-
+            ul li{ position: relative; padding-left: 15px;
+                a{text-decoration: none; line-height: 30px; font-size: 16px;font-family: "Arial", sans-serif; color: rgb(78, 78, 78);}
+                &:before{content: ''; position: absolute; left: 0; top: 13px; width: 4px; height: 4px; border-radius: 50%;background-color: #b0db01; }
             }
-
         }
     }
 }
 /* slice-colom */
-
