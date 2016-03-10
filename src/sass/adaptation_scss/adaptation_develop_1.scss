@@ -16,10 +16,33 @@
 @media screen and (max-width: 992px){
 
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
+
+    /* footer */
+
+        .footer{
+            .footer-top{flex-wrap:wrap;flex-direction: column;justify-content:flex-start;
+                .footer-list-wrap{width: 25%;}
+            }
+        }
+
+    /* /footer */
 
 }
 @media screen and (max-width: 666px){
+
+}
+@media screen and (max-width: 640px){
+
+    /* footer */
+
+        .footer{
+            .footer-top{
+                .footer-list-wrap{width: 50%;}
+            }
+        }
+
+    /* /footer */
 
 }
 @media screen and (max-width: 479px){
