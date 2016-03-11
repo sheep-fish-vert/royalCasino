@@ -83,3 +83,49 @@ header{position: relative;z-index: 15;
     }
 }
 /*/main-baner*/
+
+/*bottom-baner*/
+.bottom-baner{text-align: center;margin:30px 0px;
+    a{display: inline-block;}
+}
+/*/bottom-baner*/
+
+/*casino-item*/
+.casino-item{
+    .content{padding: 20px;display: flex;justify-content: space-between;flex-wrap: wrap;align-content:stretch;}
+    .item-img-wrap{width: 28%;
+        .item-img{margin-bottom: 10px;
+            img{position: relative;left: 50%;transform: translateX(-50%);}
+        }
+        .item-button{
+            .button-green{line-height: 45px;text-decoration: none;font-size: 16px;}
+        }
+    }
+    .texter{width: 72%;padding-left: 18px;
+        h5{font-size: 18px;font-family: "Arial";color: #424242;font-weight: bold;line-height: 1.2;padding-bottom: 14px;padding-top: 14px;}
+        p{font-size: 14px;color: #6b6b6b;line-height: 22px;
+            img{margin-right: 5px;margin-bottom: -2px;}
+        }
+        .texter-table{padding-top: 22px;padding-bottom: 5px;
+            .row{margin-bottom: 8px;}
+            .td{width: 100%;display: inline-block;font-size: 14px;font-weight: 400;
+                &:first-child{color: #6b6b6b;max-width: 105px;}
+                &:last-child{max-width: 150px;color: #252525;}
+            }
+        }
+    }
+    .bonuses-wrap{padding: 0 20px 20px;
+        .item{display: flex;justify-content: space-between;flex-wrap: wrap;align-content:stretch;border-bottom: 2px solid #dddddd;padding: 18px 0px;align-items: center;}
+        a{color: #336699;display: inline-block;position: relative;text-decoration: none;
+            &:hover{
+                &:after{width: 0%;}
+            }
+            &:after{position: absolute;bottom: -1px;left: 0;background-color: #336699;height: 2px;width: 100%;content: '';transition:all ease .2s;}
+            &:first-child{font-size: 18px;font-weight: bold;max-width: 85%;}
+            &:last-child{padding-top: 1px;
+                &:after{height: 1px;bottom: -1px;}
+            }
+        }
+    }
+}
+/*/casino-item*/
