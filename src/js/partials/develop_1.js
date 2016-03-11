@@ -50,7 +50,7 @@ try{
 
     function circleDraw(){
 
-        $('.statistic-content-svg').each(function() {
+        $('.statistic-content-svg').each(function(index, el) {
 
             var svg = $(this).find('svg');
 
@@ -64,6 +64,9 @@ try{
 
             var greenLength = (greenValue * greenFerence)/maxValue;
             var blueLength = (blueValue * blueFerence)/maxValue;
+
+            svg.find('.green-text').text(parseFloat(greenValue).toPrecision(3));
+            svg.find('.blue-text').text(parseFloat(blueValue).toPrecision(3));
 
             svg.find('.green-value').css({'stroke-dasharray':greenLength+' '+greenFerence});
             svg.find('.blue-value').css({'stroke-dasharray':blueLength+' '+blueFerence});
