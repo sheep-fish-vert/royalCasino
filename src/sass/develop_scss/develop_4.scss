@@ -2,9 +2,10 @@
 header{position: relative;z-index: 15;
     .top-head{min-height: 175px;display: flex;align-items: center;justify-content: space-between;flex-wrap: wrap;align-content:center;}
     .logo{position: relative;
+        .logo-mobile{display: none;}
         .logo-flag{position: absolute;bottom:14px;right: 0;height: 24px;width: 24px;overflow: hidden;}
     }
-    .bottom-head{display: flex;align-items: center;justify-content: space-between;flex-wrap: wrap;background-color: #fff;border:2px solid #dddddd;overflow: hidden;
+    .bottom-head{display: flex;align-items: center;justify-content: space-between;flex-wrap: wrap;background-color: #fff;border:2px solid #dddddd;
         .mobile-button{display: none;}
         nav{width: 69%;
             ul{display: table;width: 100%;}

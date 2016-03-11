@@ -1,8 +1,10 @@
 /* title */
 
-.title-text{font-size: 18px; background-color: white; font-family: "Arial", sans-serif; color: rgb(165, 208, 0);  font-weight: bold; line-height: 1.2; width: 100%; border-bottom: 2px solid #dddddd; line-height: 56px; padding-left: 20px;}
+.title-text{font-size: 18px; background-color: white; font-family: "Arial", sans-serif; color: rgb(165, 208, 0);  font-weight: bold; line-height: 1.2; width: 100%; border-bottom: 2px solid #dddddd; border-top: 2px solid #dddddd; line-height: 56px; padding-left: 20px;}
 
 /* title */
+
+.test{text-decoration: none;}
 
 /* buttons */
 .button-blue{ max-width: 120px; width: 100%; font-size: 14px; font-family: "Arial"; color: rgb(254, 254, 254); font-weight: bold; line-height: 26px; text-transform: uppercase; border-radius: 3px;  background-color: rgb(51, 102, 153); display: block; text-align: center; text-decoration: none; }
@@ -12,26 +14,29 @@
 
 
 /* paginator */
-.paginator{ text-align: center; padding: 20px 0;
-    span, a{display: inline-block; vertical-align: middle; min-width: 25px; padding: 0 4px; height: 25px;  line-height: 25px; text-decoration: none; background-image: -moz-linear-gradient( 90deg, #bebebe 0%, #bebebe 0%, #bebebe 100%); background-image: -webkit-linear-gradient( 90deg, #bebebe 0%, #bebebe 0%, #bebebe 100%); background-image: -ms-linear-gradient( 90deg, #bebebe 0%, #bebebe 0%, #bebebe 100%); transition: all 2s; margin: 0 5px;
+.paginator{ text-align: center; padding: 40px 0 40px;
+    span, a{display: inline-block; vertical-align: middle; min-width: 25px; padding: 0 4px; min-height: 25px;  line-height: 25px; text-decoration: none; background-image: -moz-linear-gradient( 90deg, #bebebe 0%, #bebebe 0%, #bebebe 100%); background-image: -webkit-linear-gradient( 90deg, #bebebe 0%, #bebebe 0%, #bebebe 100%); background-image: -ms-linear-gradient( 90deg, #bebebe 0%, #bebebe 0%, #bebebe 100%); transition: all 2s; margin: 0 3px; font-size: 16px; font-family: "Arial", sans-serif; color: rgb(255, 255, 255); font-weight: bold;
         &:hover, &.current{background-image: -moz-linear-gradient( 90deg, rgb(56,159,0) 0%, rgb(146,183,0) 0%, rgb(180,226,1) 100%); background-image: -webkit-linear-gradient( 90deg, rgb(56,159,0) 0%, rgb(146,183,0) 0%, rgb(180,226,1) 100%); background-image: -ms-linear-gradient( 90deg, rgb(56,159,0) 0%, rgb(146,183,0) 0%, rgb(180,226,1) 100%);}
     }
 
-    a.previouspostslink{ margin-right: 10px; min-width: 10px; width: 10px; height: 12px; position: relative; padding: 0;
+    a.previouspostslink{ margin-right: 20px; min-width: 10px; width: 10px; min-height: 12px; position: relative; padding: 0;
         &:before{content: ''; width: 0; height: 0; border-style: solid; border-width: 6px 10px 0 0; border-color: white transparent transparent transparent; position: absolute; top: 0; left: 0;}
         &:after{content: ''; width: 0; height: 0; border-style: solid; border-width: 6px 0 0 10px; border-color: transparent transparent transparent white;  position: absolute; bottom: 0; left: 0;}
     }
-    a.nextpostslink{ margin-left: 10px; min-width: 10px; width: 10px; height: 12px; position: relative; padding: 0;
+    a.nextpostslink{ margin-left: 20px; min-width: 10px; width: 10px; min-height: 12px; position: relative; padding: 0;
         &:before{content: ''; width: 0; height: 0; border-style: solid; border-width: 0 10px 6px 0; border-color: transparent white transparent transparent; position: absolute; top: 0; left: 0;}
         &:after{content: ''; width: 0; height: 0; border-style: solid; border-width: 0 0 6px 10px; border-color: transparent transparent white transparent; position: absolute; bottom: 0; left: 0;}
     }
 }
 /* paginator */
 
-
+.super-stat{background-color: white;border: 2px solid #dddddd;border-top: 0px solid #dddddd;  margin-top: -2px; position: relative; overflow: hidden;
+    &:before{content: ''; position: absolute; left: calc(50% - 2px); top: 0; bottom: 0; width: 2px; background-color: #dddddd; z-index: 11;}
+    &:after{content: ''; position: absolute; left: calc(75% ); top: 0; bottom: 0; width: 2px; background-color: #dddddd; z-index: 11;}
+}
 
 /* first-colom */
-.casino-list-wrap{  width: 50%; float: left; border: 2px solid #dddddd;border-top: 0px solid #dddddd;background-color: #ffffff;
+.casino-list-wrap{ height: 100%;  width: 50%; float: left; border-right: 2px solid transparent;background-color: #ffffff;
     .conteiner{
         .content{ width: 100%;padding-left: 10px;  padding-right: 50px;
             .item-list{
@@ -59,10 +64,11 @@
 /* /first-colom */
 
 /* second-colom */
-.second-block-wrap{ width: 25%; float: left;
-    .conteiner{border-bottom: 2px solid #dddddd;
+.second-block-wrap{ width: 25%; float: left; background-color: #e6e6e6; position: relative;
+    &:after{content: ''; position: absolute; bottom: -100vh; height: 100vh; left: 0; right: 0; background-color: #e6e6e6;z-index: 5;}
+    .conteiner{
         .content{ padding: 20px;
-            .top-text{font-size: 12px; font-family: "Arial", sans-serif; color: rgb(101, 101, 101); line-height: 1.2; padding-bottom: 15px; }
+            .top-text{font-size: 12px; font-family: "Arial", sans-serif; color: rgb(101, 101, 101); line-height: 1.2; padding-bottom: 10px; }
             .item-table{ display: table;
                 .item{ width: 100%; text-align: center; padding: 5px 0;
                     .con1{display: table-cell; vertical-align: middle; width: 85px; }
@@ -80,11 +86,12 @@
 
 /* slice-colom */
 
-.slice-wrap{  width: 25%; float: left; border: 2px solid #dddddd;border-top: 0px solid #dddddd; background-color: #ffffff;
+.slice-wrap{ position: relative; width: 25%; float: left; border-left: 2px solid transparent; background-color: #ffffff;z-index: 10;
+    &:after{content: ''; position: absolute; z-index: 1; left: 0; right: 0; bottom: -100vh; height: 100vh; background-color: white;}
     .content{ padding: 30px 20px; text-align: center; background-color: white; position: relative;
         p.look-smile{ position: absolute; top: 0; left: 50%; transform: translateX(-50%); height: 50px; width: 80%; font-size: 14px; font-family: "Arial", sans-serif; font-style: italic;  line-height: 1.2; z-index: -1; top: 30%; }
         .bonus-email{
-            .form_input{ padding-bottom: 20px; position: relative;
+            .form_input{ padding-bottom: 16px; position: relative;
                 ::-webkit-input-placeholder {color: rgb(140, 140, 139);}
                 ::-moz-placeholder          {color: rgb(140, 140, 139);}/* Firefox 19+ */
                 :-moz-placeholder           {color: rgb(140, 140, 139);}/* Firefox 18- */
