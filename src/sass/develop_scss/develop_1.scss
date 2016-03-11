@@ -95,6 +95,9 @@
         .statistic-content-svg{float:left;width: 150px;
             svg{width: 130px;height: 130px;
                 .green-value, .blue-value{stroke-dasharray:0 1000;transform-origin:50% 50%;transform:rotate(-90deg);transition:all 1.5s ease;}
+                .green-text, .blue-text{font-weight: 700;}
+                .green-text{fill:#a5d000;font-size: 24px;}
+                .blue-text{fill:#336699;font-size: 16px;}
             }
         }
 
@@ -114,6 +117,11 @@
             .statistic-info-bottom{margin-bottom:15px;
                 .statistic-info-bottom-title{color:#6b6b6b;line-height: 20px;}
                 .statistic-info-bottom-text{color:#336699;font-weight: 700;line-height: 18px;}
+            }
+            .statistic-info-button{
+                .button-blue{
+                    &:hover{background-color:orange;}
+                }
             }
         }
 
