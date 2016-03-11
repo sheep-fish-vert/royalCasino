@@ -112,6 +112,7 @@ function headeButer(menuMobile,toggleMenu){
                     {
                         toggleMenu.slideUp();
                         menuMobile.removeClass('active');
+                        $('header .bottom-head nav li.menu-item-has-children > ul').slideUp();
                     }
             }
         });
