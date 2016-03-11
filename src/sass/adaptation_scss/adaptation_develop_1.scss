@@ -28,6 +28,19 @@
 
     /* /footer */
 
+    /* form */
+
+        .form-class{
+            .form-wrap{max-width: none;}
+            .form_row{
+                .form_input{
+                    .errorText{position: static;padding-top: 10px;display: block;width: 100%;transform:translate(0, 0);}
+                }
+            }
+        }
+
+    /* /form */
+
 }
 @media screen and (max-width: 666px){
 
@@ -38,14 +51,117 @@
 
         .footer{
             .footer-top{
-                .footer-list-wrap{width: 50%;}
+                .footer-list-wrap{width: 50%;font-size: 20px;line-height: 30px;}
+            }
+            .footer-bottom{
+               .footer-text{font-size: 20px;line-height: 28px;}
             }
         }
 
     /* /footer */
 
+    /* form */
+
+        .form-class{
+            .form-class-title{font-size: 32px;}
+            .form-class-subtitle{font-size: 24px;}
+            .form_row{
+                .form_input{
+                    input{height: 100%;line-height: 100px;font-size: 28px;
+                        &::-webkit-input-placeholder {font-size: 28px;}
+                        &:-moz-placeholder {font-size: 28px;}
+                        &::-moz-placeholder {font-size: 28px;}
+                        &:-ms-input-placeholder {font-size: 28px;}
+                    }
+                    .errorText{font-size: 20px;}
+                }
+            }
+            .button-green, .button-blue{font-size: 28px;line-height: 100px;height: 100px;}
+            .form-links{font-size: 24px;}
+            .form-socials{
+                .form-socials-text{font-size: 24px;}
+                .form-socials-wrap{
+                    a{width: 51px;height: 51px;}
+                }
+            }
+        }
+
+    /* /form */
+
+    /* registration-message */
+
+        .registration-message{
+            .registration-message-wrap{
+                .registration-message-title{font-size: 32px;line-height: 40px;}
+                .registration-message-text{font-size: 28px;line-height: 34px;}
+                .registration-message-link{
+                    .button-blue{max-width: none;height: 95px;line-height: 95px;font-size: 32px;}
+                }
+            }
+        }
+
+    /* /registration-message */
+
 }
 @media screen and (max-width: 479px){
+
+    /* footer */
+
+        .footer{
+            .footer-top{
+                .footer-list-wrap{font-size: 10px;line-height: 16px;}
+            }
+            .footer-bottom{
+                .footer-social-links{
+                    a{width: 40px;height: 40px;}
+                }
+               .footer-text{font-size: 10px;line-height: 16px;}
+            }
+        }
+
+    /* /footer */
+
+    /* form */
+
+        .form-class{
+            .form-class-title{font-size: 16px;}
+            .form-class-subtitle{font-size: 12px;}
+            .form_row{
+                .form_input{
+                    input{line-height: 50px;font-size: 14px;
+                        &::-webkit-input-placeholder {font-size: 14px;}
+                        &:-moz-placeholder {font-size: 14px;}
+                        &::-moz-placeholder {font-size: 14px;}
+                        &:-ms-input-placeholder {font-size: 14px;}
+                    }
+                    .errorText{font-size: 10px;}
+                }
+            }
+            .button-green, .button-blue{line-height: 50px;height: 50px;font-size: 14px;}
+            .form-links{font-size: 12px;}
+            .form-socials{
+                .form-socials-text{font-size: 12px;}
+                .form-socials-wrap{
+                    a{width: 36px;height: 36px;}
+                }
+            }
+        }
+
+    /* /form */
+
+    /* registration-message */
+
+        .registration-message{
+            .registration-message-wrap{
+                .registration-message-title{font-size: 18px;line-height: 22px;}
+                .registration-message-text{font-size: 14px;line-height: 20px;}
+                .registration-message-link{
+                    .button-blue{max-width: none;height: 50px;line-height: 50px;font-size: 16px;}
+                }
+            }
+        }
+
+    /* /registration-message */
 
 }
 @media screen and (max-width: 320px){

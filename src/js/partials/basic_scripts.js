@@ -112,6 +112,7 @@ function headeButer(menuMobile,toggleMenu){
                     {
                         toggleMenu.slideUp();
                         menuMobile.removeClass('active');
+                        $('header .bottom-head nav li.menu-item-has-children > ul').slideUp();
                     }
             }
         });
@@ -122,6 +123,8 @@ function headeButer(menuMobile,toggleMenu){
 $(document).ready(function() {
     //oneHeightItems();
     $('.footer_placeholder').height($('.footer').outerHeight());
+
+    headeButer($('.mobile-button'),$('.bottom-head nav'))
 
     //goTo();
     //animationBlock($('.setion-animate'));

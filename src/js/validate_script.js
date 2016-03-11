@@ -6,6 +6,39 @@ function validate(form, options){
         highlightFunction:null,
         unhighlightFunction:null
     }
+
+    var doc = $('html').attr('lang');
+    var message={};
+
+    switch(doc){
+        case 'ru':
+            message = {
+                nameInput:"Укажите имя",
+                mailInput:"Укажите E-mail",
+                messageInput:"Сообщение не может быть пустым",
+                inputPhoneNum:"Введите номер мобильного телефона",
+                inputPhoneArea:"Введите текст",
+                missed:"Вы пропустили2",
+                validMail:"Невалидный e-mail",
+                wrongPass:"Неверный пароль",
+                insufficiently:"Недостаточно символов"
+            }
+            break;
+        case 'en':
+            message = {
+                nameInput:"Enter your name",
+                mailInput:"Enter E-MAIL",
+                messageInput:"MESSAGE CAN NOT BE EMPTY",
+                inputPhoneNum:"Enter your mobile phone number",
+                inputPhoneArea:"Enter the text",
+                missed:"You skipped it",
+                validMail:"Valid email",
+                wrongPass:"Incorrect password",
+                insufficiently:"Not enough characters"
+            }
+            break;
+    }
+
     $.extend(setings, options);
 
     var $form = $(form);
@@ -47,7 +80,7 @@ function validate(form, options){
                 if( typeof(setings.submitFunction) === 'function' ) {
                     setings.submitFunction(form);
                 } else {
-                    $form.submit();
+                    $form[0].submit();
                 }
             }
         });
@@ -56,7 +89,7 @@ function validate(form, options){
             $(this).rules( "add", {
                 required: true,
                 messages: {
-                    required: "Вы пропустили"
+                    required: message.missed
                 }
             });
         });
@@ -65,7 +98,7 @@ function validate(form, options){
             $('[type="email"]',$form).rules( "add",
             {
                 messages: {
-                    email: "Невалидный email"
+                    email: message.validMail
                  }
             });
         }
@@ -74,7 +107,7 @@ function validate(form, options){
             $('.tel-mask[required]',$form).rules("add",
             {
                 messages:{
-                    required:"Введите номер мобильного телефона."
+                    required:message.inputPhoneNum
                 }
             });
         }
@@ -85,8 +118,8 @@ function validate(form, options){
                     minlength:3,
                     equalTo:"#password",
                     messages:{
-                        equalTo:"Неверный пароль.",
-                        minlength:"Недостаточно символов."
+                        equalTo:message.wrongPass,
+                        minlength:message.insufficiently
                     }
                 });
             }
@@ -233,9 +266,14 @@ function fancyboxForm(){
 }
 
 $(document).ready(function(){
+
    validate('#call-popup .contact-form', {submitFunction:validationCall});
 
    validate('.bonus-email', {submitFunction:validationCallSuccMail});
+
+   validate('.login-form-main');
+
+   validate('.registration-form-main');
 
    Maskedinput();
    fancyboxForm();
