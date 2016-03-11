@@ -13,7 +13,6 @@ try{
             if( !$('.mobile-head-arrow').length > 0 ){
                 $('.menu-item-has-children a').append(span);
             }
-
         }else{
             $('.mobile-head-arrow').remove();
         }
