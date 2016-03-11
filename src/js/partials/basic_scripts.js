@@ -122,7 +122,7 @@ function headeButer(menuMobile,toggleMenu){
 /* DOCUMENT READY  */
 $(document).ready(function() {
     //oneHeightItems();
-    $('.footer_placeholder').height($('.footer').outerHeight());
+    //$('.footer_placeholder').height($('.footer').outerHeight());
 
     headeButer($('.mobile-button'),$('.bottom-head nav'))
 
@@ -132,5 +132,5 @@ $(document).ready(function() {
 
 $(window).resize(function() {
 
-    $('.footer_placeholder').height($('.footer').outerHeight());
+    //$('.footer_placeholder').height($('.footer').outerHeight());
 });

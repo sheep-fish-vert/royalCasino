@@ -131,7 +131,7 @@
                 .statistic-item-title{font-size: 10px;color:#a5d000;margin-bottom: 5px;font-weight: 700;}
             }
             .statistic-item-rating{width: calc(100% - 150px);
-                .statistic-item-rating-row{margin-bottom: 5px;display: flex;flex-wrap:wrap;font-size: 10px;color:#225383;font-weight: 700;
+                .statistic-item-rating-row{margin-bottom: 5px;display: flex;flex-wrap:wrap;font-size: 10px;color:#225383;font-weight: 700;line-height: 16px;
                     .statistic-item-rating-text{width: 105px;}
                     .statistic-item-rating-value{width: calc(100% - 105px);}
                 }
@@ -141,9 +141,36 @@
     }
 
     .statistic-main{
-        .statistic-content{padding: 25px 20px 20px 20px;
+
+        .statistic-content{padding: 25px 20px 20px 20px;margin-bottom: 0;border-bottom: none;
             .statistic-content-logo{right: 20px;top:20px;}
         }
+
+        .static-item-descript{padding: 15px 15px 15px 15px;
+            &.static-item-descript-hasImg{
+                .list-img{float: right;width: 180px;}
+                .list{width: calc(100% - 200px);}
+            }
+            .list{float: left;width: 100%;
+                table{width: 100%;
+                    tr{border-bottom: 1px solid #dadada;
+                        td{vertical-align: top;
+                            &:first-child{width: 140px;}
+                            &:last-child{width: calc(100% - 140px);}
+                        }
+                        &:last-child{border-bottom: none;}
+                    }
+                }
+                .descript-title, .descript-text{display: inline-block;padding: 8px 8px 8px 0;font-size: 12px;line-height: 18px;}
+                .descript-title{color:#797979;}
+            }
+            .list-links{width: 100%;display: flex;justify-content:center;padding-top: 15px;border-top:1px solid #dadada;
+                .button-green, .button-blue{max-width: 150px;width: 100%;margin:0 5px;height: 35px;line-height: 35px;font-size: 14px;font-weight: 700;color:#fff;text-decoration: none;cursor: pointer;
+                    &:hover{background:orange;}
+                }
+            }
+        }
+
     }
 
 /* /statistic */
