@@ -1,5 +1,7 @@
 try{
 
+    //footer adaptation
+
     function footerAdaptation(){
 
         function listWrapHeight(){
@@ -40,11 +42,42 @@ try{
 
         });
 
-    }
+    };
+
+    // /footer adaptation
+
+    // circle draw
+
+    function circleDraw(){
+
+        $('.statistic-content-svg').each(function() {
+
+            var svg = $(this).find('svg');
+
+            var maxValue = 5;
+
+            var greenValue = svg.data('green');
+            var blueValue = svg.data('blue');
+
+            var greenFerence = 2 * svg.find('.green-value').attr('r') * Math.PI;
+            var blueFerence = 2 * svg.find('.blue-value').attr('r') * Math.PI;
+
+            var greenLength = (greenValue * greenFerence)/maxValue;
+            var blueLength = (blueValue * blueFerence)/maxValue;
+
+            svg.find('.green-value').css({'stroke-dasharray':greenLength+' '+greenFerence});
+            svg.find('.blue-value').css({'stroke-dasharray':blueLength+' '+blueFerence});
+
+        });
+
+    };
+
+    // /circle draw
 
     $(document).ready(function(){
 
         footerAdaptation();
+        circleDraw();
 
     });
 
