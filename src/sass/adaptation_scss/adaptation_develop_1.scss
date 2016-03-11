@@ -49,6 +49,17 @@
             .static-content-info{float:none;width: 100%;}
         }
 
+        .statistic-main{
+            .static-item-descript{
+                &.static-item-descript-hasImg{
+                    .list-img{float: none;width: auto;margin-bottom: 10px;}
+                    .list{width: 100%;}
+                }
+
+            }
+            .list, .list-links{float:none;}
+        }
+
     /* /statistic */
 
 }
@@ -137,6 +148,37 @@
                     .button-blue{max-width: 240px;width: 100%;height: 50px;line-height: 50px;font-size: 28px;}
                 }
             }
+
+            .statistic-item-bottom{
+                .statistic-item-left{width: 275px;
+                    .statistic-item-title{font-size: 20px;}
+                }
+                .statistic-item-rating{width: calc(100% - 295px);
+                    .statistic-item-rating-row{font-size: 20px;line-height: 26px;
+                        .statistic-item-rating-text{width: 180px;}
+                        .statistic-item-rating-value{width: calc(100% - 180px);}
+                    }
+                }
+            }
+
+        }
+
+        .statistic-main{
+            .static-item-descript{
+                .list{
+                    table{
+                        tr{
+                            td{
+                                &:first-child, &:last-child{width: 50%;}
+                            }
+                        }
+                    }
+                    .descript-title, .descript-text{font-size: 24px;line-height: 30px;padding: 12px 5px 12px 0;}
+                }
+                .list-links{justify-content:space-between;padding-top: 30px;
+                    .button-green, .button-blue{max-width: calc(50% - 5px);height: 72px;line-height: 72px;font-size: 28px;margin: 0;}
+                }
+            }
         }
 
     /* /statistic */
@@ -223,6 +265,30 @@
                 }
                 .statistic-info-button{
                     .button-blue{max-width: 120px;width: 100%;height: 25px;line-height: 25px;font-size: 14px;}
+                }
+            }
+
+            .statistic-item-bottom{
+                .statistic-item-left{width: 130px;
+                    .statistic-item-title{font-size: 10px;}
+                }
+                .statistic-item-rating{width: calc(100% - 150px);
+                    .statistic-item-rating-row{font-size: 10px;line-height: 18px;
+                        .statistic-item-rating-text{width: 105px;}
+                        .statistic-item-rating-value{width: calc(100% - 105px);}
+                    }
+                }
+            }
+
+        }
+
+        .statistic-main{
+            .static-item-descript{
+                .list{
+                    .descript-title, .descript-text{font-size: 12px;line-height: 20px;padding: 8px 5px 8px 0;}
+                }
+                .list-links{justify-content:space-between;padding-top: 10px;
+                    .button-green, .button-blue{max-width: calc(50% - 5px);height: 36px;line-height: 36px;font-size: 14px;}
                 }
             }
         }
