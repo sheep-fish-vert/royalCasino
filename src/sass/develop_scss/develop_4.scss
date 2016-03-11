@@ -129,3 +129,28 @@ header{position: relative;z-index: 15;
     }
 }
 /*/casino-item*/
+
+/*rating*/
+.c-rating {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c-rating__item {
+  height: 24px;
+  background: url("../images/star.svg");
+  background-position: 0 0;
+  cursor: pointer;
+}
+
+.c-rating__item:hover,
+.c-rating__item.is-active {
+  background-position: -14px 0;
+}
+
+
+.rating {
+    .c-rating__item{display: inline-block;height: 14px;width: 14px;background-repeat: no-repeat;background-size: cover;}
+}
+/*/rating*/
