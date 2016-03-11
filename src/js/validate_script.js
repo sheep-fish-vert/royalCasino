@@ -269,7 +269,8 @@ $(document).ready(function(){
 
    validate('#call-popup .contact-form', {submitFunction:validationCall});
 
-   validate('.bonus-email', {submitFunction:validationCallSuccMail});
+   validate('.disigner-1 .bonus-email', {submitFunction:validationCallSuccMail});
+   validate('.disigner-2 .bonus-email', {submitFunction:validationCallSuccMail});
 
    validate('.login-form-main');
 
