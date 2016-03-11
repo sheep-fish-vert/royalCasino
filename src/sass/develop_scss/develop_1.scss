@@ -94,7 +94,7 @@
 
         .statistic-content-svg{float:left;width: 150px;
             svg{width: 130px;height: 130px;
-                .green-value{transform-origin:50% 50%;transform:rotate(-90deg);}
+                .green-value, .blue-value{stroke-dasharray:0 1000;transform-origin:50% 50%;transform:rotate(-90deg);transition:all 1.5s ease;}
             }
         }
 
