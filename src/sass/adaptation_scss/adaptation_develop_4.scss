@@ -40,6 +40,20 @@
         }
     }
     /*header*/
+
+    /*main-baner*/
+    .main-baner{
+        .main-baner-wrap{height: 445px;padding: 27px;}
+        .main-baner-wrapper{}
+        .item{
+            &.big{}
+            img{max-width: 101%;}
+        }
+        .sub-item{
+            &:first-child{}
+        }
+    }
+    /*/main-baner*/
 }
 @media screen and (max-width: 992px){
     header .bottom-head nav li.menu-item-has-children:after{display: none;}
@@ -95,6 +109,25 @@
         }
     }
     /*header*/
+
+    /*main-baner*/
+    .main-baner{
+        .mbox{
+            &:after,&:before{right: calc(100% - 24px); background-size: cover;}
+            &:before{left: calc(100% - 24px);}
+        }
+        .main-baner-wrap{height: 690px;padding: 21px;margin:0 14px;
+        }
+        .main-baner-wrapper{}
+        .item{
+            &.big{}
+            img{max-width: 101%;}
+        }
+        .sub-item{
+            &:first-child{}
+        }
+    }
+    /*/main-baner*/
 }
 @media screen and (max-width: 767px){
 
