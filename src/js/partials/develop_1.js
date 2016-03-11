@@ -26,6 +26,8 @@ try{
                 $('.footer-top').height($('.footer-top').height()/1.5);
             }
 
+            $('.footer_placeholder').height($('.footer').outerHeight());
+
         }
 
         listWrapHeight();
