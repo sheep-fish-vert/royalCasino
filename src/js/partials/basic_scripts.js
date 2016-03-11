@@ -123,6 +123,8 @@ $(document).ready(function() {
     //oneHeightItems();
     $('.footer_placeholder').height($('.footer').outerHeight());
 
+    headeButer($('.mobile-button'),$('.bottom-head nav'))
+
     //goTo();
     //animationBlock($('.setion-animate'));
 });

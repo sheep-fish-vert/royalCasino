@@ -1,7 +1,16 @@
 try{
     function socialHeaderClick(){
-        if( $(window).width()>768 && $(window).width()<1024 ){
-            console.log('go');
+        $('.green-arrow').click(function() {
+            if( $(window).width()>768 && $(window).width()<1024 ){
+                $('.soc-mob li').stop().slideToggle();
+            }else{
+                 $('.soc-mob li').removeAttr('style')
+            }
+        });
+
+        if( $(window).width()<=768 ){
+            var span = $('<span class="mobile-head-arrow"></span>')
+            // $('.menu-item-has-children ')
         }
     }
 
