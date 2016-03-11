@@ -30,26 +30,26 @@
 
 }
 @media screen and (max-width: 768px){
-
-
+    .disigner-2{display: block !important;}
+    .disigner-1{display: none !important;}
 
     .super-stat{margin: 0 14px; width: calc(100% - 14px);}
     .casino-list-wrap .conteiner .content .item-list .item .right-it {padding: 0px 10px 20px;}
-    .super-stat:after{ display: block; left: auto; right: 320px;}
-    .slice2, .slice3{border: none; width: 320px;
+    .super-stat:after{ display: block; left: auto; right: 50%;}
+    .slice2, .slice3{border: none; width: 50%;
         &:after{}
     }
-    .second-block-wrap {float: right; width: 320px;}
-    .slice1, .casino-list-wrap{width: calc(100% - 320px); float: left; border: none;}
+    .second-block-wrap {float: right; width: 50%;}
+    .slice1, .casino-list-wrap{width: 50%; float: left; border: none;}
 
     .casino-list-wrap .conteiner .content .item-list .item {
         .right-it {display: block}
         .left-it{display: block;}
     }
-    .disigner-my-duck{width: calc(100% - 320px);  float: left; margin-bottom: 225px;
+    .disigner-my-duck{width: 50%;  float: left;
         &:after { content: ''; display: none;}
     }
-    .disigner-my-duck-2{ position: absolute; bottom: 0; left: 0; float: none;}
+    //.disigner-my-duck-2{ position: absolute; bottom: 0; left: 0; float: none;}
 
 }
 @media screen and (max-width: 666px){
@@ -133,8 +133,6 @@
         }
     }
     .super-stat:after{ display: none;}
-    .slice1{position: absolute;bottom: 0; left: 0; right: 0;}
-    .slice3{margin-bottom: 225px;}
     .slice-wrap:after {display: none;}
 }
 @media screen and (max-width: 320px){
