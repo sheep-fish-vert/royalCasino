@@ -267,7 +267,7 @@ function fancyboxForm(){
 
 
 function ratingScript(){
-    if( $('#rating') ){
+    if( $('#rating').length>0 ){
         var el = document.querySelector('#rating');
         var rate = el.getAttribute("data-rate");
         var currentRating = 0;
