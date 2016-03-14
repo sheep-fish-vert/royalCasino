@@ -1,7 +1,7 @@
 try{
     function HeaderClick(){
         $('.green-arrow').click(function() {
-            if( $(window).width()>768 && $(window).width()<1024 ){
+            if( $(window).width()>=768 && $(window).width()<=1024 ){
                 $('.soc-mob li').stop().slideToggle();
             }else{
                  $('.soc-mob li').removeAttr('style');

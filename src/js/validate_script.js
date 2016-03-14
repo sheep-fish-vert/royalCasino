@@ -265,8 +265,37 @@ function fancyboxForm(){
   })
 }
 
-$(document).ready(function(){
 
+function ratingScript(){
+    if( $('#rating') ){
+        var el = document.querySelector('#rating');
+        var rate = el.getAttribute("data-rate");
+        var currentRating = 0;
+
+        var maxRating= 5;
+
+        var callback = function(rating) {
+            $.ajax({
+                url: ajaxphp,
+                type: "POST",
+                data: rating,
+                contentType:false,
+                processData:false,
+                cache:false,
+                success: function(response) {
+
+                }
+            });
+        };
+
+        var myRating = rating(el, currentRating, maxRating, callback);
+
+        myRating.setRating(rate, false);
+    }
+}
+
+$(document).ready(function(){
+    ratingScript();
    validate('#call-popup .contact-form', {submitFunction:validationCall});
 
    validate('.disigner-1 .bonus-email', {submitFunction:validationCallSuccMail});
