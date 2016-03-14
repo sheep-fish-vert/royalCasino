@@ -13,24 +13,27 @@
 }
 @media screen and (max-width: 1024px){
     .super-stat:before, .super-stat:after{ display: none;}
-    .slice2:after { z-index: -1;}
+
 
     .super-stat{display: table; width: 100%;}
-    .casino-list-wrap {width: calc(200%/3); float: none; border-right: 2px solid #dddddd; display: inline-block;}
-    .second-block-wrap { width: calc(100%/3); float: none; display: inline-block; vertical-align: top;}
+    .casino-list-wrap {width: calc(200%/3); float: none; border-right: 2px solid transparent; display: inline-block;}
+    .second-block-wrap { width: calc(100%/3); float: none; display: inline-block; vertical-align: top; position: relative;
+        &:before{content: ''; width: 2px; height: 10000000px; top: 0; left: -2px; position: absolute; background-color: #dddddd;}
+    }
     .slice-wrap{width: calc(100%/3);float: none; display: inline-block; vertical-align: top; position: relative; z-index: 10;}
     .slice1, .slice2, .slice3{border: none;}
     .slice2{position: relative;
-        &:after{content: ''; width: 2px; height: 100vh; top: 0; right: -2px; position: absolute; background-color: #dddddd;}
+        &:after{content: ''; width: 2px; height: 10000000px; top: 0; right: -2px; position: absolute; background-color: #dddddd;}
     }
     .slice3{position: relative;
-        &:before{content: ''; width: 2px; height: 100vh; top: 0; left: -2px; position: absolute; background-color: #dddddd;}
+        &:before{content: ''; width: 2px; height: 10000000px; top: 0; left: -2px; position: absolute; background-color: #dddddd;}
     }
 }
 @media screen and (max-width: 992px){
 
 }
 @media screen and (max-width: 768px){
+    .slice2:after { z-index: -1;}
     .disigner-2{display: block !important;}
     .disigner-1{display: none !important;}
 
