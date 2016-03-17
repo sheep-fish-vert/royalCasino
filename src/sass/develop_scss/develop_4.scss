@@ -17,12 +17,9 @@ header{position: relative;z-index: 15;
                         li{display: block;text-align: left;
 
                         }
-                        a{padding: 10px 11px;display: inline-block;
-                            &:hover{
+                        a{padding: 10px 11px;display: inline-block; width: 100%;
+                            &:hover{ background-color: #a5d000;  color: white; text-decoration: none !important;
                                 span:after{opacity: 1;}
-                            }
-                            span{position: relative;
-                                &:after{position: absolute;top: 100%;width: 100%;content: '';height: 2px;background-color: #000;left: 0;transition:all ease .2s;opacity: 0;}
                             }
                         }
                     }
