@@ -21,7 +21,8 @@ img{vertical-align:bottom;border:0;max-width:100%;}
 
 /* wraps styling*/
 
-.mbox{max-width:1300px;width:100%;margin:0 auto;position:relative;z-index:1;padding: 0 10px;}
+.mbox{width:80%; max-width: 1300px; margin:0 auto;position:relative;z-index:1;padding: 0 10px;}
+
 .mbox:after{content:"";clear:both;font-size:1px;line-height:1px;height:0;overflow:hidden;display:block;}
 
 /* /wraps styling*/
