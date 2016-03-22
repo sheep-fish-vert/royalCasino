@@ -164,6 +164,9 @@
         }
 
         .statistic-main{
+            .statistic-content{
+                .statistic-content-logo{width:calc(100% - 315px);}
+            }
             .static-item-descript{
                 .list{
                     table{
@@ -283,6 +286,9 @@
         }
 
         .statistic-main{
+            .statistic-content{
+                .statistic-content-logo{width:calc(100% - 175px);}
+            }
             .static-item-descript{
                 .list{
                     .descript-title, .descript-text{font-size: 12px;line-height: 20px;padding: 8px 5px 8px 0;}
