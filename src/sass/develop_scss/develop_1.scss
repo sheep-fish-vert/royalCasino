@@ -29,10 +29,10 @@
 
 /* form */
 
-    .form-class{background-color: #fff;padding: 25px 20px 0 20px;
+    .form-class{background-color: #fff;padding: 25px 20px 0 20px; text-align: center;
         .form-class-title{font-size: 18px;color:#336699;font-weight: 700;text-transform: uppercase;margin-bottom: 5px;}
         .form-class-subtitle{font-size: 12px;color:#336699;margin-bottom: 10px;}
-        .form-wrap{max-width: calc(100% - 210px);width: 100%;}
+        .form-wrap{max-width: calc(100% - 210px);width: 100%; margin: 0 auto;}
         .form_row{margin-bottom: 20px;
             .form_input{position: relative;
                 input{height: 50px;background-color: #fff;border:1px solid #c5c5c5;border-radius: 3px;text-align: center;line-height: 50px;padding: 0 5px;width: 100%;
@@ -57,13 +57,13 @@
                     &:after{width: 0;}
                 }
             }
-        }
-        .form-socials{padding-bottom: 20px;padding-top: 35px;
-            .form-socials-text{font-size: 12px;color:#336699;text-align: center;margin-bottom: 15px;padding: 0 5px;}
-            .form-socials-wrap{display: flex;justify-content:center;
-                a{display: flex;justify-content:center;align-items:center;width:36px;height: 36px;margin:0 5px;background-color: #b3b3b3;border:1px solid #e4e4e4;border-radius:2px;transition:background-color 300ms ease, border-color 300ms ease;
-                    &:hover{background-color: orange;border-color:orange;}
-                }
+        }        
+    }
+    .form-socials{padding-bottom: 20px;padding-top: 35px;
+        .form-socials-text{font-size: 12px;color:#336699;text-align: center;margin-bottom: 15px;padding: 0 5px;}
+        .form-socials-wrap{display: flex;justify-content:center;
+            a{display: flex;justify-content:center;align-items:center;width:36px;height: 36px;margin:0 5px;background-color: #b3b3b3;border:1px solid #e4e4e4;border-radius:2px;transition:background-color 300ms ease, border-color 300ms ease;
+                &:hover{background-color: orange;border-color:orange;}
             }
         }
     }
@@ -117,7 +117,7 @@
             }
             .statistic-info-bottom{margin-bottom:15px;
                 .statistic-info-bottom-title{color:#6b6b6b;line-height: 20px;}
-                .statistic-info-bottom-text{color:#336699;font-weight: 700;line-height: 18px;}
+                .statistic-info-bottom-text a{text-decoration: none;  color:#336699;font-weight: 700;line-height: 18px;}
             }
             .statistic-info-button{
                 .button-blue{

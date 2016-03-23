@@ -138,7 +138,7 @@
             .static-content-info{
                 .static-info-title{font-size: 32px;}
                 .static-info-top{
-                    .static-info-top-text{font-size: 28px;}
+                    .static-info-top-text{font-size: 28px;line-height: 34px;}
                 }
                 .statistic-info-bottom{
                     .statistic-info-bottom-title{font-size: 28px;line-height: 34px;}
@@ -150,10 +150,10 @@
             }
 
             .statistic-item-bottom{
-                .statistic-item-left{width: 275px;
+                .statistic-item-left{width: 275px;margin-bottom: 20px;
                     .statistic-item-title{font-size: 20px;}
                 }
-                .statistic-item-rating{width: calc(100% - 295px);
+                .statistic-item-rating{width: calc(100% - 295px);min-width: 200px;
                     .statistic-item-rating-row{font-size: 20px;line-height: 26px;
                         .statistic-item-rating-text{width: 180px;}
                         .statistic-item-rating-value{width: calc(100% - 180px);}
@@ -164,6 +164,9 @@
         }
 
         .statistic-main{
+            .statistic-content{
+                .statistic-content-logo{width:calc(100% - 315px);}
+            }
             .static-item-descript{
                 .list{
                     table{
@@ -272,7 +275,7 @@
                 .statistic-item-left{width: 130px;
                     .statistic-item-title{font-size: 10px;}
                 }
-                .statistic-item-rating{width: calc(100% - 150px);
+                .statistic-item-rating{width: calc(100% - 150px);min-width: 120px;
                     .statistic-item-rating-row{font-size: 10px;line-height: 18px;
                         .statistic-item-rating-text{width: 105px;}
                         .statistic-item-rating-value{width: calc(100% - 105px);}
@@ -283,6 +286,9 @@
         }
 
         .statistic-main{
+            .statistic-content{
+                .statistic-content-logo{width:calc(100% - 175px);}
+            }
             .static-item-descript{
                 .list{
                     .descript-title, .descript-text{font-size: 12px;line-height: 20px;padding: 8px 5px 8px 0;}

@@ -9,8 +9,12 @@
 }
 @media screen and (max-width: 1280px){
     .casino-list-wrap .conteiner .content { padding-right: 10px;}
-
 }
+
+@media screen and (max-width: 1279px){
+    .mbox{width:100%}
+}
+
 @media screen and (max-width: 1024px){
     .super-stat:before, .super-stat:after{ display: none;}
 
@@ -33,6 +37,7 @@
 
 }
 @media screen and (max-width: 768px){
+    .mbox{padding: 0 20px;}
     .slice2:after { z-index: -1;}
     .disigner-2{display: block !important;}
     .disigner-1{display: none !important;}
