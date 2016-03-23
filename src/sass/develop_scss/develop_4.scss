@@ -44,12 +44,12 @@ header{position: relative;z-index: 15;
             }
         }
         .social{width: 20%;overflow: hidden;
-            ul{display: flex;align-items: stretch;justify-content: space-between;flex-wrap: wrap;align-content:stretch;height: 61px;}
-            li{text-align: center;border-left: 2px solid #dddddd;width: 25%;position: relative;
+            .soc-wrap{display: flex;align-items: stretch;justify-content: space-between;flex-wrap: wrap;align-content:stretch;height: 61px;width: 100%;}
+            b{text-align: center;border-left: 2px solid #dddddd;width: 25%;position: relative;display: inline-block;
                 &:hover{opacity: .7;}
             }
             .soc-mob{width: 75%;position: relative;height: 100%;display: flex;align-items: stretch;justify-content: space-between;flex-wrap: wrap;align-content:stretch;
-                li{width: 33.33%;}
+                b{width: 33.33%;}
             }
             .green-arrow{display: none;}
             a{display: block;position: absolute;top: 0;left: 0;right: 0;bottom:0;

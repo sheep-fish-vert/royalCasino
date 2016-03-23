@@ -2,9 +2,9 @@ try{
     function HeaderClick(){
         $('.green-arrow').click(function() {
             if( $(window).width()>=768 && $(window).width()<=1024 ){
-                $('.soc-mob li').stop().slideToggle();
+                $('.soc-mob b').stop().slideToggle();
             }else{
-                 $('.soc-mob li').removeAttr('style');
+                 $('.soc-mob b').removeAttr('style');
             }
         });
 
