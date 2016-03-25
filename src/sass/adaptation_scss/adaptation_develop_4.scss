@@ -50,7 +50,7 @@
         }
         .flag{width: 45px;min-height: 47px;
             span{padding-top: 14px;font-size: 14px;}
-            &:after{border-bottom: 8px solid #000;border-left: 22.5px solid #a5d000;border-right: 22.5px solid #a5d000;}
+            &:after{border-bottom: 8px solid transparent;border-left: 22px solid #a5d000;border-right: 23px solid #a5d000;}
         }
     }
     /*/main-baner*/
@@ -135,7 +135,6 @@
         }
         .flag{width: 45px;min-height: 47px;
             span{padding-top: 14px;font-size: 14px;}
-            &:after{border-bottom: 8px solid #000;border-left: 22.5px solid #a5d000;border-right: 22.5px solid #a5d000;}
         }
     }
     /*/main-baner*/
