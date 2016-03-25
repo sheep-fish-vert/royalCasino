@@ -91,12 +91,12 @@
     .second-block-wrap .conteiner .content {
         .top-text{font-size: 24px;}
         .item-table{width: 100%;
-            .item{width: 100%; display: table; padding-top: 20px; padding-bottom: 20px;
-                .con1{width: 123px;
+            .item{width: 100%; padding-top: 20px; padding-bottom: 20px;
+                .con1{max-width: 123px;
                     img{width: 100%; height: auto;}
                 }
-                .con2{width: calc(100% - 255px); font-size: 26px;}
-                .con3{width: 130px;
+                .con2{ font-size: 26px;}
+                .con3{
                     a{font-size: 28px; line-height: 50px; }
                 }
             }
@@ -132,13 +132,7 @@
     .casino-list-wrap, .second-block-wrap, .slice-wrap {float: none; width: 100%;}
     .second-block-wrap .conteiner .content {
         .item-table{width: 100%;
-            .item{width: 100%; display: table;
-                .con1{width: 85px;
-                    img{width: 100%; height: auto;}
-                }
-                .con2{width: calc(100% - 150px);}
-                .con3{width: 65px;}
-            }
+            .item{width: 100%;}
         }
     }
     .super-stat:after{ display: none;}

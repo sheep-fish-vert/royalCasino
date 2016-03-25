@@ -244,7 +244,6 @@ function popNext(popupId, popupWrap){
 }
 
 
-
 /*маска на инпуте*/
 function Maskedinput(){
     if($('.tel-mask')){
@@ -294,6 +293,42 @@ function ratingScript(){
     }
 }
 
+//ajax func for programmer
+
+function someAjax(item, someUrl, successFunc, someData){
+
+    $(document).on('click', item, function(e){
+
+        e.preventDefault();
+
+        var itemObject = $(this);
+
+        $.ajax({
+            url:someUrl,
+            data:someData,
+            method:'POST',
+            success : function(data){
+                successFunc(data, itemObject);
+            }
+        });
+
+    });
+
+}
+
+/* example for someAjax func
+
+    write like this
+    someAjax('.link', '/programer_item.php', someFuncName, {action:'someAction', item_id:id});
+
+*/
+
+function loadCasinoList(data){
+
+    $('.casino-list-wrap .item-list').html(data);
+
+}
+
 $(document).ready(function(){
     ratingScript();
    validate('#call-popup .contact-form', {submitFunction:validationCall});
@@ -304,6 +339,8 @@ $(document).ready(function(){
    validate('.login-form-main');
 
    validate('.registration-form-main');
+
+   someAjax('.paginator a', 'ajax-casino-list.php', loadCasinoList);
 
    Maskedinput();
    fancyboxForm();
