@@ -52,7 +52,9 @@
                         }
                         h5{font-size: 18px; font-family: "Arial", sans-serif; color: rgb(66, 66, 66); font-weight: bold; line-height: 1.2; padding-bottom: 18px;}
                         p{ font-size: 14px; font-family: "Arial", sans-serif; color: rgb(107, 107, 107); padding-bottom: 5px;
-                            img{display: inline-block;}
+                            img{display: inline-block;
+                                &.not-accepted{filter:grayscale(100%);}
+                            }
                         }
                         .decript{font-size: 14px; font-family: "Arial", sans-serif; color: rgb(107, 107, 107); line-height: 1.2;
                             tr td:first-child{ width: 90px; }
