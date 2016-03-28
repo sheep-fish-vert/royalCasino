@@ -114,3 +114,5 @@
     <a href="#">4</a>
     <a href="#" class="nextpostslink"></a>
 </div>
+
+<p>test text</p>

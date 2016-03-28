@@ -323,9 +323,30 @@ function someAjax(item, someUrl, successFunc, someData){
 
 */
 
-function loadCasinoList(data){
+function paginatorHref(){
 
-    $('.casino-list-wrap .item-list').html(data);
+    $(document).on('click', '.paginator a', function(e){
+
+        e.preventDefault();
+
+        var page = $(this).attr('href');
+
+        $('.casino-list-wrap .content').addClass('loading');
+
+        $.ajax({
+            url: 'ajax-casino-list.php',
+            //data:{action:'paginate', pagenumber:page},
+            method:'POST',
+            success:function(data){
+
+                $('.casino-list-wrap .item-list').html(data);
+                $('.casino-list-wrap .content').removeClass('loading');
+                var target = $('.casino-list-wrap .title-text').offset().top;
+                $(scroller).animate({scrollTop:target},400);
+            }
+        });
+
+    });
 
 }
 
@@ -340,7 +361,7 @@ $(document).ready(function(){
 
    validate('.registration-form-main');
 
-   someAjax('.paginator a', 'ajax-casino-list.php', loadCasinoList);
+   paginatorHref();
 
    Maskedinput();
    fancyboxForm();
