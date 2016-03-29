@@ -3,7 +3,7 @@ header{position: relative;z-index: 15;
     .top-head{min-height: 175px;display: flex;align-items: center;justify-content: space-between;flex-wrap: wrap;align-content:center;}
     .logo{position: relative;
         .logo-mobile{display: none;}
-        .logo-flag{position: absolute;bottom:14px;right: 0;height: 24px;width: 24px;overflow: hidden;}
+        .logo-flag{position: absolute;bottom:14px;right: 0;height: 20px;width: 24px;overflow: hidden;}
     }
     .bottom-head{display: flex;align-items: center;justify-content: space-between;flex-wrap: wrap;background-color: #fff;border:2px solid #dddddd;
         .mobile-button{display: none;}
@@ -151,3 +151,18 @@ header{position: relative;z-index: 15;
     .c-rating__item{display: inline-block;height: 14px;width: 14px;background-repeat: no-repeat;background-size: cover;}
 }
 /*/rating*/
+
+/* texter table */
+
+    .texter{
+        table{width: 100%;margin-top: 22px;margin-bottom: 5px;
+            tr{
+                td{padding-bottom: 6px;font-size: 14px;font-weight: 400;
+                    &:first-child{max-width: 105px;}
+                    &:last-child{max-width: 150px;}
+                }
+            }
+        }
+    }
+
+/* /texter taable */

@@ -234,22 +234,12 @@
 
     /*casino-item*/
     .casino-item{
-        .content{}
-        .item-img-wrap{
-            .item-img{
-                img{}
-            }
-            .item-button{
-                .button-green{}
-            }
-        }
         .texter{
             h5{font-size: 32px;}
             p{font-size: 28px;line-height: 44px;
                 img{margin-bottom: 11px;}
             }
             .texter-table{padding-top: 29px;padding-bottom: 20px;
-                .row{}
                 .td{font-size: 28px;
                     &:first-child{max-width: 45%;}
                     &:last-child{max-width: 52%;}
@@ -261,16 +251,28 @@
                 &:last-child{border-bottom: none;}
             }
             a{
-                &:hover{
-                    &:after{}
-                }
-
                 &:first-child{font-size: 32px;}
                 &:last-child{font-size: 20px;}
             }
         }
     }
     /*/casino-item*/
+
+    /* texter table */
+
+        .texter{
+            table{
+                tr{
+                    td{font-size: 28px;
+                        &:first-child{max-width: 45%;}
+                        &:last-child{max-width: 52%;}
+                    }
+                }
+            }
+        }
+
+    /* /texter taable */
+
 }
 @media screen and (max-width: 600px){
     /*main-baner*/
@@ -291,15 +293,6 @@
     /*casino-item*/
     .casino-item{
         .title-text:first-child{line-height: 1.9;}
-        .content{}
-        .item-img-wrap{
-            .item-img{
-                img{}
-            }
-            .item-button{
-                .button-green{}
-            }
-        }
         .texter{
             h5{font-size: 16px;}
             p{font-size: 14px;line-height: 22px;
@@ -318,9 +311,6 @@
                 &:last-child{border-bottom: none;}
             }
             a{
-                &:hover{
-                    &:after{}
-                }
 
                 &:first-child{font-size: 16px;}
                 &:last-child{font-size: 10px;}
@@ -328,6 +318,19 @@
         }
     }
     /*/casino-item*/
+
+    /* texter table */
+
+        .texter{
+            table{
+                tr{
+                    td{font-size: 14px;}
+                }
+            }
+        }
+
+    /* /texter taable */
+
 }
 @media screen and (max-width: 320px){
     /*header*/

@@ -1,6 +1,6 @@
 /* title */
 
-.title-text{font-size: 18px; background-color: white; font-family: "Arial", sans-serif; color: rgb(165, 208, 0);  font-weight: bold; line-height: 26px; width: 100%; border-bottom: 2px solid #dddddd; border-top: 2px solid #dddddd; padding-left: 20px;padding-top: 10px;padding-bottom: 10px;}
+.title-text{font-size: 18px; background-color: white; font-family: "Arial", sans-serif; color: rgb(165, 208, 0);  font-weight: bold; line-height: 26px; width: 100%; border-bottom: 2px solid #dddddd; border-top: 2px solid #dddddd; padding-left: 20px;padding-top: 15px;padding-bottom: 15px;}
 
 /* title */
 
@@ -15,7 +15,7 @@
 
 /* paginator */
 .paginator{ text-align: center; padding: 40px 0 40px;
-    span, a{display: inline-block; vertical-align: middle; min-width: 25px; padding: 0 4px; min-height: 25px;  line-height: 25px; text-decoration: none; background-image: -moz-linear-gradient( 90deg, #bebebe 0%, #bebebe 0%, #bebebe 100%); background-image: -webkit-linear-gradient( 90deg, #bebebe 0%, #bebebe 0%, #bebebe 100%); background-image: -ms-linear-gradient( 90deg, #bebebe 0%, #bebebe 0%, #bebebe 100%); transition: all 2s; margin: 0 3px; font-size: 16px; font-family: "Arial", sans-serif; color: rgb(255, 255, 255); font-weight: bold;
+    span, a{display: inline-block; vertical-align: middle; min-width: 25px; padding: 0 4px; min-height: 25px;  line-height: 25px; text-decoration: none; background-image: -moz-linear-gradient( 90deg, #bebebe 0%, #bebebe 0%, #bebebe 100%); background-image: -webkit-linear-gradient( 90deg, #bebebe 0%, #bebebe 0%, #bebebe 100%); background-image: -ms-linear-gradient( 90deg, #bebebe 0%, #bebebe 0%, #bebebe 100%); transition: all 2s; margin: 0 3px; font-size: 16px; font-family: "Arial", sans-serif; color: rgb(255, 255, 255); font-weight: bold;margin-bottom: 5px;
         &:hover, &.current{background-image: -moz-linear-gradient( 90deg, rgb(56,159,0) 0%, rgb(146,183,0) 0%, rgb(180,226,1) 100%); background-image: -webkit-linear-gradient( 90deg, rgb(56,159,0) 0%, rgb(146,183,0) 0%, rgb(180,226,1) 100%); background-image: -ms-linear-gradient( 90deg, rgb(56,159,0) 0%, rgb(146,183,0) 0%, rgb(180,226,1) 100%);}
     }
     a{
@@ -78,13 +78,13 @@
             .top-text{font-size: 12px; font-family: "Arial", sans-serif; color: rgb(101, 101, 101); line-height: 1.2; padding-bottom: 10px; }
             .item-table{
                 .item{ width: 100%; text-align: center; padding: 5px 0;display: flex;align-items:center;justify-content:space-around;flex-wrap:wrap;
-                    .item-link{display: flex;align-items:center;justify-content:space-around;width: 66.66%; font-family: "Arial", sans-serif; color: rgb(83, 83, 83); line-height: 1.2;text-decoration: none;
+                    .item-link{display: flex;flex-wrap:wrap;align-items:center;justify-content:space-between;width: 66.66%; font-family: "Arial", sans-serif; color: rgb(83, 83, 83); line-height: 1.2;text-decoration: none;
                         &:hover{
                             .con2{text-decoration: underline;}
                         }
                     }
                     .con1{ max-width: 85px;width: 100%; }
-                    .con2{ font-size: 13px;}
+                    .con2{ font-size: 13px;max-width: calc(100% - 90px);width: 100%;word-break:break-all;}
                     .con3{ padding: 0 7px;width: 33.33%;
                         a{text-decoration: none;
                             &.button-green{width: 100%;justify-content:center;}
@@ -125,14 +125,24 @@
             .convert-butt{padding: 10px 0 0;}
         }
         .lister{ text-align: left;
-            ul li{ position: relative; padding-left: 15px;
-                a{text-decoration: none; line-height: 30px; font-size: 16px;font-family: "Arial", sans-serif; color: rgb(78, 78, 78);}
-                &:before{content: ''; position: absolute; left: 0; top: 13px; width: 4px; height: 4px; border-radius: 50%;background-color: #b0db01; }
-            }
+
         }
     }
 }
 /* slice-colom */
+
+/* styled list */
+
+    .slice-wrap{
+        ul{padding: 30px 20px;
+            li{ position: relative; padding-left: 15px;text-align: left;
+                a{text-decoration: none; line-height: 30px; font-size: 16px;font-family: "Arial", sans-serif; color: rgb(78, 78, 78);text-transform: uppercase;}
+                &:before{content: ''; position: absolute; left: 0; top: 13px; width: 4px; height: 4px; border-radius: 50%;background-color: #b0db01;}
+            }
+        }
+    }
+
+/* /styled list */
 
 /* flag styles */
 
@@ -148,3 +158,17 @@
 /* /flag styles */
 
 .disigner-2{display: none !important;}
+
+/* fbf-widget */
+
+    .fbf-widget{padding: 30px 20px;
+        .subscription_email{width: 100%;line-height: 44px;font-size: 14px;border-width:2px;border-style:solid;border-color:#d9d9d9;color:#8c8c8b;margin-bottom: 16px;font-style: italic;
+            &::-webkit-input-placeholder {color: rgb(140, 140, 139);}
+            &::-moz-placeholder          {color: rgb(140, 140, 139);}/* Firefox 19+ */
+            &:-moz-placeholder           {color: rgb(140, 140, 139);}/* Firefox 18- */
+            &:-ms-input-placeholder      {color: rgb(140, 140, 139);}
+        }
+        .subscription_btn{max-width: 125px;width: 100%;margin:0 auto;background:#336699;border:none;text-align: center;text-transform: uppercase;font-size: 14px;line-height:35px;font-weight: bold;display: block;}
+    }
+
+/* /fbf-widget */
