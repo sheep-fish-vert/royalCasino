@@ -57,9 +57,7 @@
                         }
                         h5{font-size: 18px; font-family: "Arial", sans-serif; color: rgb(66, 66, 66); font-weight: bold; line-height: 1.2; padding-bottom: 18px;}
                         p{ font-size: 14px; font-family: "Arial", sans-serif; color: rgb(107, 107, 107); padding-bottom: 5px;
-                            img{display: inline-block;
-                                &.not-accepted{filter:grayscale(100%);}
-                            }
+                            img{display: inline-block;}
                         }
                         .decript{font-size: 14px; font-family: "Arial", sans-serif; color: rgb(107, 107, 107); line-height: 1.2;
                             tr td:first-child{ width: 90px; }
@@ -135,5 +133,18 @@
     }
 }
 /* slice-colom */
+
+/* flag styles */
+
+    .flag-wrap{display:inline-block;position:relative;
+        &:before, &:after{content:"";display: block;position: absolute;left:calc(50% - 2px);top:calc(50% - 13px);width: 3px;height: 26px;background-color: tomato;opacity:0;transform-origin:50% 50%;border-radius: 3px;}
+        &:before{transform:rotate(45deg);}
+        &:after{transform:rotate(-45deg);}
+        &.not-accepted{
+            &:before, &:after{opacity: 1;}
+        }
+    }
+
+/* /flag styles */
 
 .disigner-2{display: none !important;}
