@@ -350,8 +350,28 @@ function paginatorHref(){
 
 }
 
+// before page leave page script
+
+function beforeLeave(){
+
+    var hook = true;
+
+    $(window).bind('beforeunload', function(){
+        if(hook){
+            return 'Do you want leave this page?';
+        }
+    });
+
+    $(document).on('click', 'a', function(){
+       hook = false;
+    });
+
+}
+
+// /before page leave page script
+
 $(document).ready(function(){
-    ratingScript();
+   ratingScript();
    validate('#call-popup .contact-form', {submitFunction:validationCall});
 
    validate('.disigner-1 .bonus-email', {submitFunction:validationCallSuccMail});
@@ -365,4 +385,7 @@ $(document).ready(function(){
 
    Maskedinput();
    fancyboxForm();
+
+   beforeLeave();
+
 });
