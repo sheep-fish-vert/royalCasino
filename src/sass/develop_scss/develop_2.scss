@@ -9,7 +9,7 @@
 /* buttons */
 
 .button-blue{ max-width: 120px; width: 100%; font-size: 14px;  color: rgb(254, 254, 254); font-weight: bold; line-height: 26px; text-transform: uppercase; border-radius: 3px;  background-color: rgb(51, 102, 153); display: block; text-align: center; text-decoration: none;
-    &:hover{background-color:#ffb76b;color:#f7f7f7;}
+    &:hover{background-color:#1D4975;color:#f7f7f7;}
 }
 
 .button-green{ min-width: 66px; display: block; color: white; background-image: -moz-linear-gradient( 90deg, rgb(44,124,0) 0%, rgb(136,171,0) 0%, rgb(180,226,1) 100%); background-image: -webkit-linear-gradient( 90deg, rgb(44,124,0) 0%, rgb(136,171,0) 0%, rgb(180,226,1) 100%); background-image: -ms-linear-gradient( 90deg, rgb(44,124,0) 0%, rgb(136,171,0) 0%, rgb(180,226,1) 100%);border-radius: 3px; text-align: center; font-size: 14px; font-weight: bold; line-height: 25px;
@@ -175,7 +175,9 @@
             &:-moz-placeholder           {color: rgb(140, 140, 139);}/* Firefox 18- */
             &:-ms-input-placeholder      {color: rgb(140, 140, 139);}
         }
-        .subscription_btn{max-width: 125px;width: 100%;margin:0 auto;background:#336699;border:none;text-align: center;text-transform: uppercase;font-size: 14px;line-height:35px;font-weight: bold;display: block;}
+        .subscription_btn{max-width: 125px;width: 100%;margin:0 auto;background:#336699;border:none;text-align: center;text-transform: uppercase;font-size: 14px;line-height:35px;font-weight: bold;display: block;
+            &:hover{background-color: #1D4975;}
+        }
     }
 
 /* /fbf-widget */
