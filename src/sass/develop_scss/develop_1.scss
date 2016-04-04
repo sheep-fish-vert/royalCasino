@@ -33,7 +33,7 @@
         .form-class-title{font-size: 18px;color:#336699;font-weight: 700;text-transform: uppercase;margin-bottom: 5px;}
         .form-class-subtitle{font-size: 12px;color:#336699;margin-bottom: 10px;}
         .form-wrap{max-width: calc(100% - 210px);width: 100%; margin: 0 auto;}
-        .form_row{margin-bottom: 20px;
+        .form_row{margin-bottom: 30px;
             .form_input{position: relative;
                 input{height: 50px;background-color: #fff;border:1px solid #c5c5c5;border-radius: 3px;text-align: center;line-height: 50px;padding: 0 5px;width: 100%;
                     &::-webkit-input-placeholder {color:#a0a0a0;font-family: 'Asap',sans-serif;}
@@ -41,7 +41,7 @@
                     &::-moz-placeholder {color:#a0a0a0;font-family: 'Asap',sans-serif;}
                     &:-ms-input-placeholder {color:#a0a0a0;font-family: 'Asap',sans-serif;}
                 }
-                .errorText{position: absolute;left: calc(100% + 10px);width: 200px;top: 50%;transform:translate(0, -50%);font-size: 12px;color:#424242;}
+                .errorText{position: absolute;left: calc(50% - 100px);width: 200px;top: calc(100% + 10px);transform:translate(0, -50%);font-size: 12px;color:#424242;}
             }
         }
         .submit-wrap{margin-bottom: 20px;}
@@ -65,12 +65,18 @@
             }
         }
     }
+    .casino-list-wrap{
+        &.you-are-registered{
+            .registration-form{display: none;}
+            .registration-message{display: block;}
+        }
+    }
 
 /* /form */
 
 /* ragistration-message */
 
-    .registration-message{background-color:#fff;
+    .registration-message{background-color:#fff;display: none;
         .registration-message-wrap{padding:25px 20px 20px 20px;
             .registration-message-title{font-weight: 700;font-size: 18px;color:#336699;text-transform: uppercase;margin-bottom: 20px;line-height: 22px;}
             .registration-message-text{font-size: 14px;color:#336699;line-height: 20px;margin-bottom: 27px;}

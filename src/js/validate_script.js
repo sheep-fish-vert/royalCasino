@@ -32,7 +32,7 @@ function validate(form, options){
                 inputPhoneNum:"Enter your mobile phone number",
                 inputPhoneArea:"Enter the text",
                 missed:"You skipped it",
-                validMail:"Valid email",
+                validMail:"Vrong email",
                 wrongPass:"Incorrect password",
                 insufficiently:"Not enough characters"
             }
@@ -370,6 +370,48 @@ function beforeLeave(){
 
 // /before page leave page script
 
+// login callback
+
+function loginEnter(form){
+
+    var thisForm = $(form);
+    var formSur = thisForm.serialize();
+
+    $.ajax({
+        url : thisForm.attr('action'),
+        data: formSur,
+        method:'POST',
+        success : function(data){
+            document.location.href="/";
+        }
+    });
+
+}
+
+// /login callback
+
+// registration callback
+
+function registrationEnter(form){
+
+    var thisForm = $(form);
+    var formSur = thisForm.serialize();
+
+    $.ajax({
+        url : thisForm.attr('action'),
+        data: formSur,
+        method:'POST',
+        success : function(data){
+            if(data == 'true'){
+                $('.casino-list-wrap').addClass('you-are-registered');
+            }
+        }
+    });
+
+}
+
+// /registration callback
+
 $(document).ready(function(){
    ratingScript();
    validate('#call-popup .contact-form', {submitFunction:validationCall});
@@ -377,9 +419,9 @@ $(document).ready(function(){
    validate('.disigner-1 .bonus-email', {submitFunction:validationCallSuccMail});
    validate('.disigner-2 .bonus-email', {submitFunction:validationCallSuccMail});
 
-   validate('.login-form-main');
+   validate('.login-form-main', {submitFunction:loginEnter});
 
-   validate('.registration-form-main');
+   validate('.registration-form-main', {submitFunction:registrationEnter});
 
    paginatorHref();
 

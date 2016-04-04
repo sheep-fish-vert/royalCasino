@@ -9,7 +9,7 @@ header{position: relative;z-index: 15;
         .mobile-button{display: none;}
         nav{width: 69%;
             ul{display: table;width: 100%;}
-            a{text-decoration: none;font-size: 19px;color: #000000;display: block;padding: 16px 15px;}
+            a{text-decoration: none;font-size: 15px;color: #000000;display: block;padding: 18px 15px;}
             li{display: table-cell;vertical-align: middle;text-align: center;position: relative;
                 &.menu-item-has-children{
                         &:after{position: absolute;content: '';width: 10px;height: 8px;top: 50%;right: 3px;transform: translateY(-50%);background: url('../images/header-arrow.png') center center no-repeat;}
