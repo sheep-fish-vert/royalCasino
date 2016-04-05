@@ -354,14 +354,23 @@ function paginatorHref(){
 
 function beforeLeave(){
 
+    var leavingSite = true;
+
     $(document).on('mouseleave', function(){
-        $.fancybox.open('#leave-fancy', {
-            wrapCSS:'leave-fancy-wrap',
-            padding:0,
-            fitToView:true,
-            autoSize:true,
-            closeBtn:false
-        });
+        if(leavingSite){
+
+            leavingSite = false;
+
+            $.fancybox.open('#leave-fancy', {
+                wrapCSS:'leave-fancy-wrap',
+                padding:0,
+                fitToView:true,
+                autoSize:true,
+                closeBtn:false
+            });
+
+        }
+
     });
 
     $(document).on('click', '.leave-button', function(){

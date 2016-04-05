@@ -141,8 +141,12 @@
 
     /*casino-item*/
     .casino-item{
-        .content{}
-        .item-img-wrap{width: 100%;text-align: center;margin-right: 0;
+        .content{
+            &.float-content{
+                .item-img-wrap{width: 100%;text-align: center;margin-right: 0;}
+            }
+        }
+        .item-img-wrap{width: 100%;
             .item-img{margin-bottom: 0;
                 img{position: static;transform: translateX(0);}
             }
