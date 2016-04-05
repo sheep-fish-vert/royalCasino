@@ -149,6 +149,7 @@ header{position: relative;z-index: 15;
 
 
 .rating {
+    &.readonly{pointer-events:none;}
     .c-rating__item{display: inline-block;height: 14px;width: 14px;background-repeat: no-repeat;background-size: cover;}
 }
 /*/rating*/
