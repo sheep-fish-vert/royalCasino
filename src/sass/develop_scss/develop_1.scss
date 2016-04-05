@@ -103,7 +103,7 @@
             }
         }
 
-        .statistic-content-logo{position:absolute;top:0;bottom:0;right:0;width: 130px;display: flex;justify-content:center;align-items:center;
+        .statistic-content-logo{position:absolute;top:0;bottom:0;right:0;width: 130px;display: flex;justify-content:center;align-items:center;overflow: hidden;max-height: 140px;
             .statistic-logo-text{position: absolute;top:0;left:0;width: 100%;font-weight: 700;text-transform: uppercase;font-size: 14px;color:#fff;line-height: 22px;text-align: center;
                 &.orange-logo-text{background-color: #ffcc00;}
                 &.red-logo-text{background-color: #ff0000;}
