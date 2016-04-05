@@ -176,3 +176,14 @@
     }
 
 /* /statistic */
+
+/* fancybox-close-window */
+
+    .leave-fancy{padding: 20px 10px;width: 425px;
+        .leave-title{text-align: center;font-size: 20px;line-height: 24px;margin-bottom: 20px;}
+        .leave-buttons{display: flex;align-items:center;justify-content:space-around;
+            .button-blue, .button-green{min-width: 0;max-width: 120px;font-size: 14px;text-transform: uppercase;width: 100%;cursor:pointer;}
+        }
+    }
+
+/* /fancybox-close-window */

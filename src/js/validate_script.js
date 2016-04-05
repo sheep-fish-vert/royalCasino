@@ -354,16 +354,23 @@ function paginatorHref(){
 
 function beforeLeave(){
 
-    var hook = true;
-
-    $(window).bind('beforeunload', function(){
-        if(hook){
-            return 'Do you want leave this page?';
-        }
+    $(document).on('mouseleave', function(){
+        $.fancybox.open('#leave-fancy', {
+            wrapCSS:'leave-fancy-wrap',
+            padding:0,
+            fitToView:true,
+            autoSize:true,
+            closeBtn:false
+        });
     });
 
-    $(document).on('click', 'a', function(){
-       hook = false;
+    $(document).on('click', '.leave-button', function(){
+        if($(this).is('.button-green')){
+            $.fancybox.close();
+        }
+        else if($(this).is('.button-blue')){
+            window.close();
+        }
     });
 
 }
