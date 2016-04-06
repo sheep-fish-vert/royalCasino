@@ -1,6 +1,8 @@
 /*header*/
 header{position: relative;z-index: 15;
-    .top-head{min-height: 175px;display: flex;align-items: center;justify-content: space-between;flex-wrap: wrap;align-content:center;}
+    .top-head{min-height: 175px;display: flex;align-items: center;justify-content: space-between;flex-wrap: wrap;align-content:center;
+        .baner img{width: 100%;}
+    }
     .logo{position: relative;
         .logo-mobile{display: none;}
         .logo-flag{position: absolute;bottom:14px;right: -5px;height: 20px;width: 32px;overflow: hidden;}
@@ -41,7 +43,7 @@ header{position: relative;z-index: 15;
             }
         }
         .social{width: 20%;overflow: hidden;
-            .soc-wrap{display: flex;align-items: stretch;justify-content: space-between;flex-wrap: wrap;align-content:stretch;height: 51px;width: 100%;}
+            .soc-wrap{display: flex;align-items: stretch;justify-content: space-between;flex-wrap: wrap;align-content:stretch;height: 56px;width: 100%;}
             b{text-align: center;border-left: 2px solid #dddddd;width: 25%;position: relative;display: inline-block;
                 &:hover{opacity: .7;}
             }
@@ -123,7 +125,7 @@ header{position: relative;z-index: 15;
         .item{display: flex;justify-content: space-between;flex-wrap: wrap;align-content:stretch;border-bottom: 2px solid #dddddd;padding: 18px 0px;align-items: center;}
         a{color: #336699;display: inline-block;position: relative;
             &:hover{text-decoration: none;}
-            &:first-child{font-size: 18px;font-weight: bold;max-width: calc(100% - 100px);}
+            &:first-child{font-size: 15px;font-weight: bold;max-width: calc(100% - 100px);}
             &:last-child{padding-top: 1px;}
         }
     }

@@ -108,10 +108,10 @@
                 &.orange-logo-text{background-color: #ffcc00;}
                 &.red-logo-text{background-color: #ff0000;}
             }
-            .satistic-img{padding: 0 10px;}
+            .satistic-img{/*padding: 0 10px;*/}
         }
 
-        .static-content-info{float: left;width: calc(100% - 280px);
+        .static-content-info{float: left;width: calc(100% - 280px - 25px);
             .static-info-title{font-size: 18px;font-weight: 700;color:#424242;margin-bottom: 15px;}
             .static-info-top{display: flex;align-items:center;margin-bottom: 4px;line-height: 20px;
                 .static-info-flag{padding-right: 5px;}
