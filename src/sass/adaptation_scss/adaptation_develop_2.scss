@@ -43,7 +43,7 @@
     .disigner-1{display: none !important;}
 
     .super-stat{margin: 0 14px; width: calc(100% - 14px);}
-    .casino-list-wrap .conteiner .content .item-list .item .right-it {padding: 0px 10px 20px;}
+    .casino-list-wrap .conteiner .content .item-list .item .right-it {padding: 0px 10px 20px;width: 100%;}
     .super-stat:after{ display: block; left: auto; right: 50%;}
     .slice2, .slice3{border: none; width: 50%;
         &:after{}
@@ -53,7 +53,7 @@
 
     .casino-list-wrap .conteiner .content .item-list .item {
         .right-it {display: block}
-        .left-it{display: block;}
+        .left-it{display: block;width: 100%;}
     }
     .disigner-my-duck{width: 50%;  float: left;
         &:after { content: ''; display: none;}

@@ -4,8 +4,8 @@
 @media screen and (max-width: 1600px){
 
 }
-@media screen and (max-width: 1366px){
-
+@media screen and (max-width: 1405px){
+    .main-baner .sub-item:first-child img{top: 50%;}
 }
 @media screen and (max-width: 1280px){
 
@@ -133,8 +133,10 @@
         .sub-item{width: 50%;height: 100%;float: left;border-top: 3px solid #8f8f8f;
             &:first-child{border-bottom: none;border-right: 3px solid #8f8f8f;}
         }
+
         .flag{min-height: 47px;
-            span{padding-top: 14px;font-size: 14px;}
+            &:after{border-bottom: 8px solid transparent;border-left: 28px solid #a5d000;border-right: 27px solid #a5d000;}
+            span{padding-top: 14px;font-size: 12px;}
         }
     }
     /*/main-baner*/
@@ -232,8 +234,7 @@
     /*/main-baner*/
 
     /*bottom-baner*/
-    .bottom-baner{margin:60px 0px;
-    }
+    .bottom-baner{margin:60px 0px;padding: 0 20px;}
     /*/bottom-baner*/
 
     /*casino-item*/
@@ -336,6 +337,40 @@
     /* /texter taable */
 
 }
+@media screen and (max-width: 390px){
+
+    /*main-baner*/
+    .main-baner{
+        .main-baner-wrap{padding: 0px 0px 3px;height: auto;}
+        .item{float: none;width: 100%;
+            &.big{max-height: 220px !important;}
+            img{max-width: 100%;min-width: auto;max-height: none;min-height: auto;}
+        }
+        .sub-item{border-top: 3px solid #8f8f8f;max-height: 220px !important;
+            img{max-width: 100%;min-width: auto;max-height: none;min-height: auto;}
+            &:first-child{border-top: 3px solid #8f8f8f;}
+        }
+        .flag{
+            span{}
+            &:after{}
+        }
+    }
+    /*/main-baner*/
+
+    /*casino-item*/
+    .casino-item{
+        .bonuses-wrap{
+            .item{padding: 20px 0px;
+                &:last-child{border-bottom: none;}
+            }
+            a{
+                &:first-child{font-size: 16px;width: 75%;max-width: 75%;}
+                &:last-child{font-size: 10px;width: 25%;}
+            }
+        }
+    }
+    /*/casino-item*/
+}
 @media screen and (max-width: 320px){
     /*header*/
     header{
@@ -352,23 +387,6 @@
     }
     /*/header*/
 
-    /*main-baner*/
-    .main-baner{
-        .main-baner-wrap{padding: 0px 0px 3px;}
-        .item{
-            &.big{}
-            img{max-width: 100%;}
-        }
-        .sub-item{border-top: 3px solid #8f8f8f;
-            img{max-width: 100%;}
-            &:first-child{border-top: 3px solid #8f8f8f;}
-        }
-        .flag{
-            span{}
-            &:after{}
-        }
-    }
-    /*/main-baner*/
 
     /*bottom-baner*/
     .bottom-baner{margin:30px 0px;}
