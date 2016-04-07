@@ -48,9 +48,9 @@
             &.big{}
             img{max-width: 101%;}
         }
-        .flag{width: 45px;min-height: 47px;
+        .flag{min-height: 47px;
             span{padding-top: 14px;font-size: 14px;}
-            &:after{border-bottom: 8px solid transparent;border-left: 22px solid #a5d000;border-right: 23px solid #a5d000;}
+            &:after{border-bottom: 8px solid transparent;border-left: 34px solid #a5d000;border-right: 33px solid #a5d000;}
         }
     }
     /*/main-baner*/
@@ -133,7 +133,7 @@
         .sub-item{width: 50%;height: 100%;float: left;border-top: 3px solid #8f8f8f;
             &:first-child{border-bottom: none;border-right: 3px solid #8f8f8f;}
         }
-        .flag{width: 45px;min-height: 47px;
+        .flag{min-height: 47px;
             span{padding-top: 14px;font-size: 14px;}
         }
     }
