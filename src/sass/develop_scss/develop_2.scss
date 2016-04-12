@@ -55,7 +55,7 @@
             .item-list{transition:opacity 300ms ease 300ms;opacity: 1;
                 .item{border-bottom: 2px solid #dddddd; display: table; min-height: 200px;max-width: 580px;width: 100%;
                     .left-it{padding: 20px 10px; display: table-cell; vertical-align: middle; min-width: 180px;width: 32%;
-                        img{width: 160px; height: 160px;}
+                        img{width: 160px; height: 160px;border-radius: 7px;overflow: hidden;}
                     }
                     .right-it{ padding: 20px 10px; display: table-cell; vertical-align: bottom;    width: 68%;
                         .conteiner-buton{ padding-top: 20px;
@@ -89,7 +89,9 @@
                             .con2{text-decoration: underline;}
                         }
                     }
-                    .con1{ max-width: 85px;/*width: 100%;*/ }
+                    .con1{ max-width: 85px;/*width: 100%;*/
+                        img{border-radius: 4px;overflow: hidden;}
+                    }
                     .con2{ font-size: 13px;width: calc(100% - 90px);/*width: 100%;*/}
                     .con3{ padding: 0 0 0 7px;width: 25%;
                         a{text-decoration: none;
