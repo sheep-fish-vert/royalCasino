@@ -69,7 +69,7 @@
     header{position: relative;
         &>.mbox{position: static;}
         .top-head{padding-top: 60px;min-height: 345px;}
-        .bottom-head{position: absolute;top: 0;left: 0;width: 100%;height: 60px;background-color: #5b5b5b;border:none;padding: 0 10px;
+        .bottom-head{position: absolute;top: 0;left: 0;width: 100%;height: 60px;background-color: #5b5b5b;border:none;padding: 0 10px;z-index: 1;
             .mobile-button{display: block;height: 100%;width: 40px;position: relative;cursor: pointer;
                 &.active{
                     span{opacity: 0;}
@@ -152,7 +152,7 @@
             .item-img{margin-bottom: 0;
                 img{position: static;transform: translateX(0);}
             }
-            .item-button{display: none;
+            .item-button{padding: 20px 0 0 0;
                 .button-green{}
             }
         }
@@ -234,7 +234,9 @@
     /*/main-baner*/
 
     /*bottom-baner*/
-    .bottom-baner{margin:60px 0px;padding: 0 20px;}
+    .bottom-baner{margin:60px 0px;padding: 0 20px;
+        img{width: 100%;}
+    }
     /*/bottom-baner*/
 
     /*casino-item*/

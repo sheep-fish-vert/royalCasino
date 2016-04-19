@@ -132,7 +132,9 @@
             }
             .statistic-content-logo{width:calc(100% - 280px);bottom:calc(100% - 280px);justify-content:flex-end;
                 .statistic-logo-text{max-width: 200px;width: 100%;left: auto;right: 0;font-size: 16px;line-height: 30px;}
-                .satistic-img{max-width: 200px;width: 100%;text-align: center;}
+                .satistic-img{max-width: 200px;width: 100%;text-align: center;
+                    img{width: 100%;}
+                }
 
             }
             .static-content-info{
@@ -142,7 +144,9 @@
                 }
                 .statistic-info-bottom{
                     .statistic-info-bottom-title{font-size: 28px;line-height: 34px;}
-                    .statistic-info-bottom-text{font-size: 28px;line-height: 34px;}
+                    .statistic-info-bottom-text{font-size: 28px;line-height: 34px;
+                        a{line-height: 34px;}
+                    }
                 }
                 .statistic-info-button{
                     .button-blue{max-width: 240px;width: 100%;height: 50px;line-height: 50px;font-size: 28px;}
@@ -255,7 +259,7 @@
             }
             .statistic-content-logo{width: calc(100% - 150px);bottom:calc(100% - 150px);
                 .statistic-logo-text{max-width: 150px;width: 100%;left: auto;right: 0;font-size: 14px;line-height: 20px;}
-                .satistic-img{max-width: 150px;padding: 0 10px;}
+                .satistic-img{max-width: 150px;}
             }
             .static-content-info{
                 .static-info-title{font-size: 16px;}
@@ -264,7 +268,9 @@
                 }
                 .statistic-info-bottom{
                     .statistic-info-bottom-title{font-size: 14px;line-height: 22px;}
-                    .statistic-info-bottom-text{font-size: 14px;line-height: 18px;}
+                    .statistic-info-bottom-text{font-size: 14px;line-height: 18px;
+                        a{line-height: 18px;}
+                    }
                 }
                 .statistic-info-button{
                     .button-blue{max-width: 120px;width: 100%;height: 25px;line-height: 25px;font-size: 14px;}
