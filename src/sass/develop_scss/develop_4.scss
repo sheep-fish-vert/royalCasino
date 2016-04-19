@@ -102,7 +102,7 @@ header{position: relative;z-index: 15;
     }
     .item-img-wrap{width: 28%;
         .item-img{margin-bottom: 10px;
-            img{position: relative;left: 50%;transform: translateX(-50%);}
+            img{position: relative;left: 50%;transform: translateX(-50%);border-radius: 7px;overflow: hidden;}
         }
         .item-button{
             .button-green{line-height: 45px;text-decoration: none;font-size: 16px;}

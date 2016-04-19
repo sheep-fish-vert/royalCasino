@@ -45,7 +45,7 @@
 
         .statistic-content{
             .statistic-content-svg{float: none;margin-bottom: 20px;}
-            .statistic-content-logo{bottom:calc(100% - 150px);}
+            .statistic-content-logo{bottom:calc(100% - 190px);}
             .static-content-info{float:none;width: 100%;}
         }
 
@@ -130,8 +130,9 @@
             .statistic-content-svg{width: 275px;
                 svg{width: 275px;height: 275px;}
             }
-            .statistic-content-logo{width:calc(100% - 280px);bottom:calc(100% - 280px);justify-content:flex-end;
-                .statistic-logo-text{max-width: 200px;width: 100%;left: auto;right: 0;font-size: 16px;line-height: 30px;}
+
+            .statistic-content-logo{width:calc(100% - 280px);bottom:calc(100% - 280px);justify-content:flex-start;max-height: 200px;
+                .statistic-logo-text{max-width: 200px;width: 100%;left: auto;right: 0;font-size: 16px;line-height: 30px;position: relative;}
                 .satistic-img{max-width: 200px;width: 100%;text-align: center;
                     img{width: 100%;}
                 }
