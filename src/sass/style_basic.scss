@@ -56,16 +56,16 @@ a[href^="http"]:empty::before {
 .texter{font-size: 14px; color: #6b6b6b; line-height: 22px;
     &>*{-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;}
     h6{/*font-weight: 800;font-size: 24px;*/margin-bottom: 15px;line-height: 30px;font: 400 48px/48px 'ArialNarrow';color: #c0c0c0;}
-    p{display: block;margin-before: 1em;margin-after: 1em;margin-start: 0px;margin-end: 0px;    -webkit-margin-before: 1em;-webkit-margin-after: 1em;-webkit-margin-start: 0px;-webkit-margin-end: 0px;}
+    p{display: block;margin-before: 1em;margin-after: 1em;margin-start: 0px;margin-end: 0px;    -webkit-margin-before: 1em;-webkit-margin-after: 1em;-webkit-margin-start: 0px;-webkit-margin-end: 0px;margin:1em 0;}
     strong, b {font-weight: bold;}
     i, cite, em, var, address, dfn {font-style: italic;}
     li {display: list-item;text-align:match-parent;text-align: -webkit-match-parent;}
-    ul, menu, dir {display: block;list-style-type: disc;margin-before: 1em;margin-after: 1em;margin-start: 0px;margin-end: 0px;padding-start: 40px;-webkit-margin-before: 1em;-webkit-margin-after: 1em;-webkit-margin-start: 0px;-webkit-margin-end: 0px;-webkit-padding-start: 40px;}
-    ol {display: block;list-style-type: decimal;margin-before: 1em;margin-after: 1em;margin-start: 0px;margin-end: 0px;padding-start: 40px;-webkit-margin-before: 1em;-webkit-margin-after: 1em;-webkit-margin-start: 0px;-webkit-margin-end: 0px;-webkit-padding-start: 40px;}
+    ul, menu, dir {display: block;list-style-type: disc;margin-before: 1em;margin-after: 1em;margin-start: 0px;margin-end: 0px;padding-start: 40px;-webkit-margin-before: 1em;-webkit-margin-after: 1em;-webkit-margin-start: 0px;-webkit-margin-end: 0px;-webkit-padding-start: 40px;padding-left:40px;}
+    ol {display: block;list-style-type: decimal;margin-before: 1em;margin-after: 1em;margin-start: 0px;margin-end: 0px;padding-start: 40px;-webkit-margin-before: 1em;-webkit-margin-after: 1em;-webkit-margin-start: 0px;-webkit-margin-end: 0px;-webkit-padding-start: 40px;padding-left:40px;}
     table {display: table;border-collapse: separate;border-spacing: 2px;border-color: grey;}
     tbody {display: table-row-group;vertical-align: middle;border-color: inherit;}
     tr {display: table-row;vertical-align: inherit;border-color: inherit;}
     td, th {display: table-cell;vertical-align: inherit;}
-    blockquote {display: block;-webkit-margin-before: 1em;-webkit-margin-after: 1em;-webkit-margin-start: 40px;-webkit-margin-end: 40px;margin-before: 1em;margin-after: 1em;margin-start: 40px;margin-end: 40px;}
+    blockquote {display: block;-webkit-margin-before: 1em;-webkit-margin-after: 1em;-webkit-margin-start: 40px;-webkit-margin-end: 40px;margin-before: 1em;margin-after: 1em;margin-start: 40px;margin-end: 40px;margin:1em 40px;}
     blockquote, q {quotes: inherit;}
 }
