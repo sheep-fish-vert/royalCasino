@@ -28,9 +28,28 @@ try{
         });
     }
 
+    function searchInput(){
+
+        $('.form-input-clear').click(function(){
+            $(this).parent().find('input').val('');
+        });
+
+        if( $(window).width() <= 1024 ){
+            $('.header-search input').focus(function(event) {
+                $(this).parents('.header-search').addClass('active');
+
+            });
+            $('.header-search input').blur(function(event) {
+                $(this).parents('.header-search').removeClass('active');
+
+            });
+        }
+    }
 
 
     $(document).ready(function(){
+        validate('.header-search form');
+        searchInput();
         HeaderClick();
     });
 

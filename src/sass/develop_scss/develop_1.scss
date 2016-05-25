@@ -142,7 +142,8 @@
     .statistic-main{
 
         .statistic-content{padding: 25px 20px 20px 20px;margin-bottom: 0;border-bottom: none;
-            .statistic-content-logo{right: 20px;top:20px;}
+            .statistic-content-logo{right: 20px;top:20px; overflow: visible;}
+            .shared-social{position: absolute;top: 100%;left: 0;}
         }
 
         .static-item-descript{padding: 15px 15px 15px 15px;

@@ -22,7 +22,7 @@
     header{
         .top-head{flex-direction: column;min-height: 285px;justify-content: space-around;}
         .bottom-head{overflow: inherit;}
-        .bottom-head nav{width: calc(100% - 66px);}
+        .bottom-head nav{width: calc(100% - 190px);}
         .bottom-head .social{width: 65px;overflow: inherit;position: relative;
             .soc-wrap{display: block;}
             &>.soc-wrap b{width: 100%;height: 100%;}
@@ -38,6 +38,8 @@
                 img{}
             }
         }
+
+        .header-search{max-width: 165px;}
     }
     /*header*/
 
@@ -113,6 +115,11 @@
                 img{display: none;}
                 img.mobile-show{display: block;}
             }
+        }
+        .bottom-head .header-search{width: 50%;max-width: 174px;
+            .form-input-wrap input{max-width: 100%;border:none;border-radius: 3px;height: 47px;}
+            &.active{max-width: calc(95% - 100px);width: 100%;}
+
         }
     }
     /*header*/

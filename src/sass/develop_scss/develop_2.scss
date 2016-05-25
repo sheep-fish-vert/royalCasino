@@ -49,14 +49,14 @@
 
     .casino-list-wrap{ height: 100%;  width: 50%; float: left; border-right: 2px solid transparent;background-color: #ffffff;
         .conteiner{
-            .content{ width: 100%;padding-left: 10px;  padding-right: 50px;position: relative;min-height:200px;position: relative;
+            .content{ width: 100%;padding-left: 10px;  padding-right: 10px;position: relative;min-height:200px;position: relative;
                 &.loading{
                     &:before{transition:opacity 300ms ease 300ms;opacity:1;}
                     .item-list{transition:opacity 300ms ease;opacity:0;}
                 }
                 &:before{content:'';display: block;position: absolute;width: 78px;height: 78px;background-image:url(../images/ring.gif);opacity: 0;pointer-events:none;top:calc(50% - 39px);left:calc(50% - 39px);opacity: 0;transition:opacity 300ms ease;}
                 .item-list{transition:opacity 300ms ease 300ms;opacity: 1;
-                    .item{border-bottom: 2px solid #dddddd; display: table; min-height: 200px;max-width: 580px;width: 100%;
+                    .item{border-bottom: 2px solid #dddddd; display: table; min-height: 200px;max-width: 616px;width: 100%;
                         .left-it{padding: 20px 10px; display: table-cell; vertical-align: middle; min-width: 180px;width: 32%;
                             img{width: 160px; height: 160px;border-radius: 7px;overflow: hidden;}
                         }

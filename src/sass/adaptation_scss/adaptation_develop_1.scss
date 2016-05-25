@@ -45,7 +45,9 @@
 
         .statistic-content{
             .statistic-content-svg{float: none;margin-bottom: 20px;}
-            .statistic-content-logo{bottom:calc(100% - 190px);width: 114px;}
+            .statistic-content-logo{bottom:calc(100% - 190px);width: 114px;
+                .shared-social{display: none;}
+            }
             .static-content-info{float:none;width: 100%;}
         }
 
